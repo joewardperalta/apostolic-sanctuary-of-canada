@@ -20,6 +20,7 @@ export default function MainNav() {
                 Ministries & Services
               </NavDropdown.Item>
               <NavDropdown.Item href="/events">Events</NavDropdown.Item>
+              <NavDropdown.Item href="/location">Location</NavDropdown.Item>
             </NavDropdown>
             <Nav.Link href="/give">Give</Nav.Link>
             <Nav.Link href="/contact">Contact Us</Nav.Link>
