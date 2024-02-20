@@ -20,18 +20,23 @@ body {
   font-weight: 400;
 }
 
+section {
+  padding: 100px 0;
+}
+
 .title {
-  font-weight: 600;
+  font-weight: 700;
   font-size: 3rem;
   margin-bottom: 1.5rem;
 }
 
 .subtitle {
-  font-size: 1.2rem;
+  font-size: 1.3rem;
 }
 
+/* Typography */
 .bold {
-  font-weight: 600;
+  font-weight: bold;
 }
 
 .big-text {
@@ -78,31 +83,56 @@ body {
   background-color: var(--primary-color);
 }
 
+.btn-secondary {
+  background-color: transparent;
+  border: none;
+  padding: 0;
+}
+.btn-secondary:hover {
+  background-color: transparent;
+}
+
+.btn-secondary i {
+  margin-left: 0.7rem;
+  transition: margin-left 0.5s;
+}
+.btn-secondary:hover i {
+  margin-left: 20px;
+}
+
 /* Home page */
 #hero-section {
   color: white;
-  padding: 15rem 0;
-  background-image: url("/pastor.png");
+  background-image: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0.4),
+      rgba(0, 0, 0, 0)
+    ),
+    url("/pastor.png");
   background-size: cover;
-}
-
-#hero-section #hero-slider img {
-  width: 100%;
+  background-position: top center;
+  height: calc(100vh - 89.594px);
 }
 
 #hero-section .subtitle {
-  margin-bottom: 3.5rem;
+  margin-bottom: 2rem;
 }
 
 #hero-section .btn-primary {
   padding: 1rem 2rem;
 }
 
-#hero-section .btn-primary a {
+#hero-section .btn-primary a,
+#hero-section .btn-secondary a {
   color: white;
   text-decoration: none;
 }
 
-#hero-section .btn-primary .fa-arrow-right {
-  margin-left: 1rem;
+#hero-section #hero-description {
+  height: 100%;
+}
+
+#hero-section #hero-description .row {
+  height: inherit;
+  align-items: end;
 }
