@@ -5,15 +5,15 @@ export default function Home() {
   return (
     <>
       <section id="hero-section">
-        <Container id="hero-description">
-          <Row>
+        <Container>
+          <Row className="content">
             <Col md={12} lg={7}>
               <h1 className="title">
                 Jesus is the <span className="bold big-text">Way</span> the{" "}
                 <span className="bold big-text">Truth</span> and the{" "}
                 <span className="bold big-text">Life</span>.
               </h1>
-              <p className="subtitle">
+              <p className="subheading">
                 Join us at The Apostolic Sanctuary of Canada Church as we praise
                 and worship our one true God Jesus Christ.
               </p>
@@ -23,6 +23,42 @@ export default function Home() {
                   <i className="fa-solid fa-arrow-right"></i>
                 </Link>
               </Button>
+            </Col>
+          </Row>
+        </Container>
+      </section>
+
+      <section id="about-section">
+        <Container>
+          <Row className="content">
+            <Col className="info">
+              <h2 className="heading">Who We Are</h2>
+              <div className="description">
+                <p>
+                  We are a Filipino Pentecostal Church and our mission is to
+                  Carry out the Commission of our Lord Jesus Christ; to preach,
+                  teach and make disciples; to serve and help our communities
+                  through various ministries and programs; to be the modern day
+                  disciples and apostles of our Lord Jesus Christ to carry the
+                  Gospel to all nations and people.
+                </p>
+                <p>
+                  We meet in our humble church every Sunday at 11am located in
+                  1177 Finch Ave West building number 3. Please see the full
+                  details on our services and location{" "}
+                  <Link href="/minstries-and-services">here</Link>.
+                </p>
+                <p>We hope to see you soon.</p>
+              </div>
+              <Button variant="secondary">
+                <Link href="/about">
+                  Learn more
+                  <i className="fa-solid fa-arrow-right"></i>
+                </Link>
+              </Button>
+            </Col>
+            <Col className="photo" lg={6}>
+              <img src="/church-family.jpg"></img>
             </Col>
           </Row>
         </Container>

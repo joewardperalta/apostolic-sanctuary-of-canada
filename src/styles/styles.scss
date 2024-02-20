@@ -1,0 +1,172 @@
+:root {
+  --primary-color: rgb(46, 115, 245);
+}
+
+// Reset
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+// Globals
+html,
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+
+body {
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+section {
+  padding: 100px 20px;
+}
+
+a {
+  color: black;
+}
+
+.title,
+.heading {
+  font-weight: 600;
+}
+
+.title {
+  font-size: 3rem;
+}
+
+.heading {
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.subheading {
+  font-size: 1.3rem;
+  margin-bottom: 2.2rem;
+}
+
+[class*="col"] {
+  padding: 0;
+}
+
+.row {
+  gap: 50px;
+}
+
+// Typography
+.bold {
+  font-weight: bold;
+}
+
+.big-text {
+  font-size: 5rem;
+}
+
+// Main navigation
+.navbar {
+  padding: 0.3rem 0;
+  background-color: white;
+
+  .navbar-brand {
+    img {
+      height: 70px;
+    }
+  }
+
+  #navbar-menu {
+    justify-content: end;
+
+    .navbar-nav {
+      gap: 1rem;
+
+      .nav-link {
+        color: black;
+      }
+    }
+  }
+}
+
+// Buttons
+.btn {
+  border-radius: 0.2rem;
+  padding: 0.5rem 1.5rem;
+  font-weight: 500;
+
+  a {
+    text-decoration: none;
+  }
+}
+
+.btn-primary {
+  background-color: var(--primary-color);
+}
+
+.btn-secondary {
+  background-color: transparent;
+  border: none;
+  padding: 0;
+
+  i {
+    margin-left: 0.7rem;
+    transition: margin-left 0.5s;
+  }
+
+  &:hover {
+    background-color: transparent;
+  }
+
+  &:hover i {
+    margin-left: 20px;
+  }
+}
+
+// Home page
+#hero-section {
+  color: white;
+  background-image: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0.4),
+      rgba(0, 0, 0, 0)
+    ),
+    url("/pastor.png");
+  background-size: cover;
+  background-position: top center;
+  height: calc(100vh - 89.594px);
+
+  .container {
+    height: 100%;
+
+    .content {
+      height: inherit;
+      align-items: end;
+
+      .btn-secondary {
+        a {
+          color: white;
+        }
+      }
+    }
+  }
+}
+
+#about-section {
+  .container {
+    .content {
+      flex-direction: row-reverse;
+      align-items: center;
+
+      .info {
+        .description {
+          margin-bottom: 2rem;
+        }
+      }
+
+      .photo img {
+        width: 100%;
+      }
+    }
+  }
+}
