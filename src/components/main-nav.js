@@ -1,0 +1,31 @@
+import Container from "react-bootstrap/Container";
+import Nav from "react-bootstrap/Nav";
+import Navbar from "react-bootstrap/Navbar";
+import NavDropdown from "react-bootstrap/NavDropdown";
+
+export default function MainNav() {
+  return (
+    <Navbar expand="lg" className="bg-body-tertiary">
+      <Container>
+        <Navbar.Brand href="/">
+          <img src="/church-logo.png" />
+        </Navbar.Brand>
+        <Navbar.Toggle aria-controls="navbar-menu" />
+        <Navbar.Collapse id="navbar-menu">
+          <Nav>
+            <Nav.Link href="/">Home</Nav.Link>
+            <Nav.Link href="/about">About</Nav.Link>
+            <NavDropdown title="Gatherings" id="gatherings-nav-dropdown">
+              <NavDropdown.Item href="/ministries-and-services">
+                Ministries & Services
+              </NavDropdown.Item>
+              <NavDropdown.Item href="/events">Events</NavDropdown.Item>
+            </NavDropdown>
+            <Nav.Link href="/give">Give</Nav.Link>
+            <Nav.Link href="/contact">Contact Us</Nav.Link>
+          </Nav>
+        </Navbar.Collapse>
+      </Container>
+    </Navbar>
+  );
+}
