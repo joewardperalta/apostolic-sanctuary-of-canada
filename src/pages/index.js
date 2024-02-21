@@ -45,7 +45,7 @@ export default function Home() {
                 <p>
                   We meet in our humble church every Sunday at 11am located in
                   1177 Finch Ave West building number 3. Please see the full
-                  details on our services and location{" "}
+                  details on our ministries and services{" "}
                   <Link href="/minstries-and-services">here</Link>.
                 </p>
                 <p>
@@ -86,6 +86,8 @@ export default function Home() {
           </Row>
         </Container>
       </section>
+
+      <section id=""></section>
     </>
   );
 }

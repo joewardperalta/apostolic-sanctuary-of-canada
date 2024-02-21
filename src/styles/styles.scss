@@ -1,5 +1,8 @@
 :root {
   --primary-color: rgb(46, 115, 245);
+  --primary-extra-light-color: rgb(228, 234, 238);
+
+  --border-soft: 3px;
 }
 
 // Reset
@@ -54,6 +57,10 @@ a {
 
 .row {
   gap: 50px;
+}
+
+img {
+  border-radius: var(--border-soft);
 }
 
 // Typography
@@ -149,6 +156,8 @@ a {
 }
 
 #about-section {
+  border-bottom: 1px solid var(--primary-extra-light-color);
+
   .container {
     .content {
       flex-direction: row-reverse;
