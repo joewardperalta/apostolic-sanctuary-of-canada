@@ -48,8 +48,31 @@ export default function Home() {
                   details on our services and location{" "}
                   <Link href="/minstries-and-services">here</Link>.
                 </p>
-                <p>We hope to see you soon.</p>
+                <p>
+                  Follow us on our Facebook page to know more about us, be
+                  updated on upcoming events and watch our live services. We
+                  hope to see you soon.
+                </p>
+                <div className="social-links">
+                  <Link
+                    className="social-link"
+                    href="https://www.facebook.com/apostolicsanctuarycanada"
+                    target="_blank"
+                  >
+                    <i class="fa-brands fa-facebook"></i>
+                    Facebook page
+                  </Link>
+                  <Link
+                    className="social-link"
+                    href="https://www.youtube.com/@theapostolicsanctuaryofcan4004"
+                    target="_blank"
+                  >
+                    <i class="fa-brands fa-youtube"></i>
+                    Youtube channel
+                  </Link>
+                </div>
               </div>
+
               <Button variant="secondary">
                 <Link href="/about">
                   Learn more
