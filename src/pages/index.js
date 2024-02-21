@@ -108,7 +108,7 @@ export default function Home() {
           <Row className="cards">
             <Col className="card-container" lg={6}>
               <Link href="/kids">
-                <Card className="ms-0">
+                <Card className="ms-lg-0">
                   <Card.Body>
                     <Card.Title>Kids Group</Card.Title>
                     <Card.Text>
@@ -126,7 +126,7 @@ export default function Home() {
 
             <Col className="card-container" lg={6}>
               <Link href="/youth">
-                <Card className="me-0">
+                <Card className="me-lg-0">
                   <Card.Body>
                     <Card.Title>Youth Group</Card.Title>
                     <Card.Text>
@@ -144,7 +144,7 @@ export default function Home() {
 
             <Col className="card-container" lg={6}>
               <Link href="/ladies">
-                <Card className="ms-0">
+                <Card className="ms-lg-0">
                   <Card.Body>
                     <Card.Title>Ladies Group</Card.Title>
                     <Card.Text>
@@ -162,7 +162,7 @@ export default function Home() {
 
             <Col className="card-container" lg={6}>
               <Link href="/mens">
-                <Card className="me-0">
+                <Card className="me-lg-0">
                   <Card.Body>
                     <Card.Title>Mens Group</Card.Title>
                     <Card.Text>
