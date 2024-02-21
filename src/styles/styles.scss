@@ -1,6 +1,7 @@
 :root {
   --primary-color: rgb(46, 115, 245);
-  --primary-extra-light-color: rgb(228, 234, 238);
+  --primary-color-extra-light: rgb(228, 234, 238);
+  --primary-color-dark: rgb(0, 18, 53);
 
   --border-soft: 3px;
 }
@@ -32,38 +33,38 @@ a {
   color: black;
 }
 
-.title,
-.heading {
-  font-weight: 600;
-}
-
-.title {
-  font-size: 3rem;
-}
-
-.heading {
-  font-size: 2.5rem;
-  margin-bottom: 1.5rem;
-}
-
-.subheading {
-  font-size: 1.3rem;
-  margin-bottom: 2.2rem;
+img {
+  border-radius: var(--border-soft);
 }
 
 [class*="col"] {
   padding: 0;
 }
 
-.row {
-  gap: 50px;
-}
-
-img {
-  border-radius: var(--border-soft);
-}
-
 // Typography
+.title {
+  font-weight: 600;
+  font-size: 3rem;
+}
+
+.subtitle {
+  font-size: 1.3rem;
+  margin-bottom: 2.2rem;
+}
+
+.heading {
+  h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+    font-weight: 600;
+  }
+
+  p {
+    font-size: 1.3rem;
+    margin-bottom: 7rem;
+  }
+}
+
 .bold {
   font-weight: bold;
 }
@@ -130,10 +131,20 @@ img {
   }
 }
 
+// Card
+.card {
+  margin: 10px;
+}
+
 // Home page
 #hero-section {
   color: white;
-  background-image: url("/pastor.png");
+  background-image: linear-gradient(
+      to right,
+      var(--primary-color-dark),
+      rgba(17, 16, 16, 0)
+    ),
+    url("/pastor.png");
   background-size: cover;
   background-position: top center;
   height: calc(100vh - 89.594px);
@@ -156,7 +167,7 @@ img {
 }
 
 #about-section {
-  border-bottom: 1px solid var(--primary-extra-light-color);
+  border-bottom: 1px solid var(--primary-color-extra-light);
 
   .container {
     .content {
@@ -209,6 +220,92 @@ img {
               color: rgb(129, 19, 0);
             }
           }
+        }
+      }
+    }
+  }
+}
+
+#community-section {
+  .cards {
+    .card-container {
+      a {
+        text-decoration: none;
+      }
+
+      .card {
+        height: 700px;
+        justify-content: end;
+        color: white;
+        padding: 1rem;
+        background-size: cover;
+        background-position: center;
+
+        .card-body {
+          flex-grow: 0;
+
+          .card-title {
+            font-size: 2rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+          }
+
+          .card-text {
+            margin-bottom: 2rem;
+          }
+
+          i {
+            margin-left: 0;
+            margin-right: 8px;
+          }
+        }
+      }
+
+      // Kids group card
+      &:nth-child(1) {
+        .card {
+          background-image: linear-gradient(
+              to top,
+              var(--primary-color-dark),
+              rgba(17, 16, 16, 0)
+            ),
+            url("/kids.jpg");
+        }
+      }
+
+      // Youth group card
+      &:nth-child(2) {
+        .card {
+          background-image: linear-gradient(
+              to top,
+              var(--primary-color-dark),
+              rgba(17, 16, 16, 0)
+            ),
+            url("/youth.jpg");
+        }
+      }
+
+      // Ladies group card
+      &:nth-child(3) {
+        .card {
+          background-image: linear-gradient(
+              to top,
+              var(--primary-color-dark),
+              rgba(17, 16, 16, 0)
+            ),
+            url("/ladies.jpg");
+        }
+      }
+
+      // Mens group card
+      &:nth-child(4) {
+        .card {
+          background-image: linear-gradient(
+              to top,
+              var(--primary-color-dark),
+              rgba(17, 16, 16, 0)
+            ),
+            url("/mens.jpg");
         }
       }
     }

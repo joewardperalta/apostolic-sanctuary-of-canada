@@ -1,4 +1,4 @@
-import { Button, Col, Row, Container } from "react-bootstrap";
+import { Button, Col, Row, Container, Card } from "react-bootstrap";
 import Link from "next/link";
 
 export default function Home() {
@@ -13,7 +13,7 @@ export default function Home() {
                 <span className="bold big-text">Truth</span> and the{" "}
                 <span className="bold big-text">Life</span>.
               </h1>
-              <p className="subheading">
+              <p className="subtitle">
                 Join us at The Apostolic Sanctuary of Canada Church as we praise
                 and worship our one true God Jesus Christ.
               </p>
@@ -31,8 +31,10 @@ export default function Home() {
       <section id="about-section">
         <Container>
           <Row className="content">
-            <Col className="info">
-              <h2 className="heading">Who We Are</h2>
+            <Col className="info mb-5 mb-lg-0">
+              <div className="heading">
+                <h2>Who We Are</h2>
+              </div>
               <div className="description">
                 <p>
                   We are a Filipino Pentecostal Church and our mission is to
@@ -59,7 +61,7 @@ export default function Home() {
                     href="https://www.facebook.com/apostolicsanctuarycanada"
                     target="_blank"
                   >
-                    <i class="fa-brands fa-facebook"></i>
+                    <i className="fa-brands fa-facebook"></i>
                     Facebook page
                   </Link>
                   <Link
@@ -67,12 +69,11 @@ export default function Home() {
                     href="https://www.youtube.com/@theapostolicsanctuaryofcan4004"
                     target="_blank"
                   >
-                    <i class="fa-brands fa-youtube"></i>
+                    <i className="fa-brands fa-youtube"></i>
                     Youtube channel
                   </Link>
                 </div>
               </div>
-
               <Button variant="secondary">
                 <Link href="/about">
                   Learn more
@@ -80,14 +81,105 @@ export default function Home() {
                 </Link>
               </Button>
             </Col>
-            <Col className="photo" lg={6}>
+
+            <Col className="photo me-lg-5" lg={6}>
               <img src="/church-family.jpg"></img>
             </Col>
           </Row>
         </Container>
       </section>
 
-      <section id=""></section>
+      <section id="community-section">
+        <Container>
+          <Row className="heading">
+            <Col className="pe-5" lg={6}>
+              <h2>Get connected with our church community.</h2>
+            </Col>
+            <Col>
+              <p>
+                We believe that spiritual connections with God and with each
+                other are important for our spiritual growth. We are a community
+                dedicated to grow in spiritual truth refined on the teaching of
+                Jesus Christ, our Lord, and Savior.
+              </p>
+            </Col>
+          </Row>
+
+          <Row className="cards">
+            <Col className="card-container" lg={6}>
+              <Link href="/kids">
+                <Card className="ms-0">
+                  <Card.Body>
+                    <Card.Title>Kids Group</Card.Title>
+                    <Card.Text>
+                      Some quick example text to build on the card title and
+                      make up the bulk of the card's content.
+                    </Card.Text>
+                    <Button variant="secondary">
+                      <i className="fa-solid fa-user"></i>
+                      Get connected
+                    </Button>
+                  </Card.Body>
+                </Card>
+              </Link>
+            </Col>
+
+            <Col className="card-container" lg={6}>
+              <Link href="/youth">
+                <Card className="me-0">
+                  <Card.Body>
+                    <Card.Title>Youth Group</Card.Title>
+                    <Card.Text>
+                      Some quick example text to build on the card title and
+                      make up the bulk of the card's content.
+                    </Card.Text>
+                    <Button variant="secondary">
+                      <i className="fa-solid fa-user"></i>
+                      Get connected
+                    </Button>
+                  </Card.Body>
+                </Card>
+              </Link>
+            </Col>
+
+            <Col className="card-container" lg={6}>
+              <Link href="/ladies">
+                <Card className="ms-0">
+                  <Card.Body>
+                    <Card.Title>Ladies Group</Card.Title>
+                    <Card.Text>
+                      Some quick example text to build on the card title and
+                      make up the bulk of the card's content.
+                    </Card.Text>
+                    <Button variant="secondary">
+                      <i className="fa-solid fa-user"></i>
+                      Get connected
+                    </Button>
+                  </Card.Body>
+                </Card>
+              </Link>
+            </Col>
+
+            <Col className="card-container" lg={6}>
+              <Link href="/mens">
+                <Card className="me-0">
+                  <Card.Body>
+                    <Card.Title>Mens Group</Card.Title>
+                    <Card.Text>
+                      Some quick example text to build on the card title and
+                      make up the bulk of the card's content.
+                    </Card.Text>
+                    <Button variant="secondary">
+                      <i className="fa-solid fa-user"></i>
+                      Get connected
+                    </Button>
+                  </Card.Body>
+                </Card>
+              </Link>
+            </Col>
+          </Row>
+        </Container>
+      </section>
     </>
   );
 }
