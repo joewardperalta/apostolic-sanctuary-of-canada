@@ -97,8 +97,6 @@ img {
 
 // Buttons
 .btn {
-  border-radius: 0.2rem;
-  padding: 0.5rem 1.5rem;
   font-weight: 500;
 
   a {
@@ -108,6 +106,12 @@ img {
 
 .btn-primary {
   background-color: var(--primary-color);
+  border-radius: 0.2rem;
+  padding: 0.8rem 1.5rem;
+
+  a {
+    color: white;
+  }
 }
 
 .btn-secondary {
@@ -305,6 +309,35 @@ img {
             ),
             url("/mens.jpg");
         }
+      }
+    }
+  }
+}
+
+#services {
+  background-color: var(--primary-color-dark);
+  color: white;
+
+  .content {
+    gap: 80px;
+
+    .images {
+      display: grid;
+      gap: 10px;
+
+      img {
+        width: 100%;
+
+        &:first-child {
+          grid-column: 1 / span 2;
+          grid-row: 1 / span 2;
+        }
+      }
+    }
+
+    .subheading {
+      p {
+        margin-bottom: 30px;
       }
     }
   }

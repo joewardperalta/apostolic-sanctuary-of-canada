@@ -102,14 +102,8 @@ export default function Home() {
           <Row>
             <Col className="pe-5" lg={6}>
               <h2 className="heading">
-                Get connected with our church community.
+                Get connected with our church community
               </h2>
-              <Button variant="secondary">
-                <Link href="/ministries-and-services">
-                  Join our Sunday Services
-                  <i className="fa-solid fa-arrow-right"></i>
-                </Link>
-              </Button>
             </Col>
             <Col>
               <p className="subheading">
@@ -123,9 +117,9 @@ export default function Home() {
 
           {/* List of church departments */}
           <Row className="cards">
-            {groups?.data.map((group) => {
+            {groups?.data.map((group, index) => {
               return (
-                <Col className="card-container" lg={6}>
+                <Col key={index} className="card-container" lg={6}>
                   <Link href="/kids">
                     <Card className="ms-lg-0">
                       <Card.Body>
@@ -141,6 +135,55 @@ export default function Home() {
                 </Col>
               );
             })}
+          </Row>
+        </Container>
+      </section>
+
+      <section id="services">
+        <Container>
+          <Row className="content">
+            <Col lg={6}>
+              <h2 className="heading">Join our Church Services</h2>
+              <div className="subheading">
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Viverra ipsum nunc aliquet bibendum enim.
+                </p>
+                <Button variant="primary">
+                  <Link href="/ministries-and-services">
+                    Ministries and Services
+                  </Link>
+                </Button>
+              </div>
+            </Col>
+            <Col className="images">
+              <img src="/praise-and-worship-1.jpg"></img>
+              <img src="/praise-and-worship-2.jpg"></img>
+              <img src="/praise-and-worship-3.jpg"></img>
+            </Col>
+          </Row>
+        </Container>
+      </section>
+
+      <section>
+        <Container>
+          <Row className="content">
+            <Col lg={7}>
+              <h2 className="heading">Join our Church Services</h2>
+              <div className="subheading">
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Viverra ipsum nunc aliquet bibendum enim.
+                </p>
+                <Button variant="primary">
+                  <Link href="/ministries-and-services">
+                    Ministries and Services
+                  </Link>
+                </Button>
+              </div>
+            </Col>
           </Row>
         </Container>
       </section>
