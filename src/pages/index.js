@@ -1,7 +1,16 @@
 import { Button, Col, Row, Container, Card } from "react-bootstrap";
 import Link from "next/link";
+import { useState, useEffect } from "react";
 
 export default function Home() {
+  const [groups, setGroups] = useState();
+
+  useEffect(() => {
+    fetch("http://localhost:3000/api/group")
+      .then((res) => res.json())
+      .then((data) => setGroups(data));
+  }, []);
+
   return (
     <>
       <section id="hero-section">
@@ -32,9 +41,7 @@ export default function Home() {
         <Container>
           <Row className="content">
             <Col className="info mb-5 mb-lg-0">
-              <div className="heading">
-                <h2>Who We Are</h2>
-              </div>
+              <h2 className="heading">Who We Are</h2>
               <div className="description">
                 <p>
                   We are a Filipino Pentecostal Church and our mission is to
@@ -91,12 +98,21 @@ export default function Home() {
 
       <section id="community-section">
         <Container>
-          <Row className="heading">
+          {/* Community section heading */}
+          <Row>
             <Col className="pe-5" lg={6}>
-              <h2>Get connected with our church community.</h2>
+              <h2 className="heading">
+                Get connected with our church community.
+              </h2>
+              <Button variant="secondary">
+                <Link href="/ministries-and-services">
+                  Join our Sunday Services
+                  <i className="fa-solid fa-arrow-right"></i>
+                </Link>
+              </Button>
             </Col>
             <Col>
-              <p>
+              <p className="subheading">
                 We believe that spiritual connections with God and with each
                 other are important for our spiritual growth. We are a community
                 dedicated to grow in spiritual truth refined on the teaching of
@@ -105,78 +121,26 @@ export default function Home() {
             </Col>
           </Row>
 
+          {/* List of church departments */}
           <Row className="cards">
-            <Col className="card-container" lg={6}>
-              <Link href="/kids">
-                <Card className="ms-lg-0">
-                  <Card.Body>
-                    <Card.Title>Kids Group</Card.Title>
-                    <Card.Text>
-                      Some quick example text to build on the card title and
-                      make up the bulk of the card's content.
-                    </Card.Text>
-                    <Button variant="secondary">
-                      <i className="fa-solid fa-user"></i>
-                      Get connected
-                    </Button>
-                  </Card.Body>
-                </Card>
-              </Link>
-            </Col>
-
-            <Col className="card-container" lg={6}>
-              <Link href="/youth">
-                <Card className="me-lg-0">
-                  <Card.Body>
-                    <Card.Title>Youth Group</Card.Title>
-                    <Card.Text>
-                      Some quick example text to build on the card title and
-                      make up the bulk of the card's content.
-                    </Card.Text>
-                    <Button variant="secondary">
-                      <i className="fa-solid fa-user"></i>
-                      Get connected
-                    </Button>
-                  </Card.Body>
-                </Card>
-              </Link>
-            </Col>
-
-            <Col className="card-container" lg={6}>
-              <Link href="/ladies">
-                <Card className="ms-lg-0">
-                  <Card.Body>
-                    <Card.Title>Ladies Group</Card.Title>
-                    <Card.Text>
-                      Some quick example text to build on the card title and
-                      make up the bulk of the card's content.
-                    </Card.Text>
-                    <Button variant="secondary">
-                      <i className="fa-solid fa-user"></i>
-                      Get connected
-                    </Button>
-                  </Card.Body>
-                </Card>
-              </Link>
-            </Col>
-
-            <Col className="card-container" lg={6}>
-              <Link href="/mens">
-                <Card className="me-lg-0">
-                  <Card.Body>
-                    <Card.Title>Mens Group</Card.Title>
-                    <Card.Text>
-                      Some quick example text to build on the card title and
-                      make up the bulk of the card's content.
-                    </Card.Text>
-                    <Button variant="secondary">
-                      <i className="fa-solid fa-user"></i>
-                      Get connected
-                    </Button>
-                  </Card.Body>
-                </Card>
-              </Link>
-            </Col>
+            {groups?.data.map((group) => {
+              return (
+                <Col className="card-container" lg={6}>
+                  <Link href="/kids">
+                    <Card className="ms-lg-0">
+                      <Card.Body>
+                        <Card.Title>{group.name}</Card.Title>
+                        <Card.Text>{group.description}</Card.Text>
+                        <Button variant="secondary">
+                          <i className="fa-solid fa-user"></i>
+                          Get connected
+                        </Button>
+                      </Card.Body>
+                    </Card>
+                  </Link>
+                </Col>
+              );
+            })}
           </Row>
         </Container>
       </section>

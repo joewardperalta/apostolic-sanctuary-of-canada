@@ -53,16 +53,14 @@ img {
 }
 
 .heading {
-  h2 {
-    font-size: 2.5rem;
-    margin-bottom: 1.5rem;
-    font-weight: 600;
-  }
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+  font-weight: 600;
+}
 
-  p {
-    font-size: 1.3rem;
-    margin-bottom: 7rem;
-  }
+.subheading {
+  font-size: 1.3rem;
+  margin-bottom: 7rem;
 }
 
 .bold {
@@ -234,7 +232,7 @@ img {
       }
 
       .card {
-        height: 700px;
+        height: 600px;
         justify-content: end;
         color: white;
         padding: 1rem;

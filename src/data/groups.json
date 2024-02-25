@@ -1,0 +1,20 @@
+{
+  "data": [
+    {
+      "name": "Kids Group",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sed lectus vestibulum mattis ullamcorper velit sed. Lorem ipsum dolor sit amet."
+    },
+    {
+      "name": "Youth Group",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Pellentesque elit ullamcorper dignissim cras tincidunt. Diam vulputate ut pharetra sit."
+    },
+    {
+      "name": "Ladies Group",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Diam in arcu cursus euismod quis viverra nibh cras pulvinar. Sed nisi lacus sed viverra tellus in hac."
+    },
+    {
+      "name": "Mens Group",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Cras semper auctor neque vitae tempus quam pellentesque. Commodo viverra maecenas accumsan lacus."
+    }
+  ]
+}
