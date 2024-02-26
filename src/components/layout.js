@@ -1,6 +1,7 @@
 import MainNav from "./main-nav";
 import Head from "next/head";
 import Script from "next/script";
+import Footer from "./footer";
 
 export default function Layout({ children, poppins }) {
   return (
@@ -12,6 +13,9 @@ export default function Layout({ children, poppins }) {
         <MainNav />
       </header>
       <main className={poppins.className}>{children}</main>
+      <footer className={poppins.className}>
+        <Footer />
+      </footer>
     </>
   );
 }

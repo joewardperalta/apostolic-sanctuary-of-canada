@@ -213,9 +213,9 @@ export default function Home() {
 
           {/* Create a list of cards for the pastors */}
           <Row className="section-main text-center">
-            {pastors?.data.map((pastor) => {
+            {pastors?.data.map((pastor, index) => {
               return (
-                <Col className="card-container">
+                <Col key={index} className="card-container">
                   <Card>
                     <Card.Img variant="top" src={pastor.img} />
                     <Card.Body>

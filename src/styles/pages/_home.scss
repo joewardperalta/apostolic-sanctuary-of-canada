@@ -88,7 +88,7 @@
 
 #community-section {
   .section-main {
-    gap: $card-gap;
+    gap: $gap;
 
     .card-container {
       a {
@@ -191,7 +191,7 @@
 
     .section-main {
       display: grid;
-      gap: $card-gap;
+      gap: $gap;
 
       img {
         width: 100%;
@@ -220,7 +220,7 @@
   }
 
   .section-main {
-    gap: $card-gap-xl;
+    gap: $gap-xl;
 
     .card-container {
       &:nth-child(2) {
@@ -236,14 +236,14 @@
   }
 }
 
-// Large
-@media screen and (min-width: 992px) {
+// Large screen >= 992px
+@media screen and (min-width: $large) {
   #community-section {
     .section-main {
-      gap: $card-gap;
+      gap: $gap;
 
       .card-container {
-        width: calc(50% - $card-gap);
+        width: calc(50% - $gap);
       }
     }
   }
