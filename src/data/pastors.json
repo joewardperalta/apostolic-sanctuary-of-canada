@@ -1,0 +1,19 @@
+{
+  "data": [
+    {
+      "name": "Edwin Fernan",
+      "role": "Bishop",
+      "img": "/"
+    },
+    {
+      "name": "David Fernan",
+      "role": "Senior Pastor",
+      "img": "/pastor-david.jpg"
+    },
+    {
+      "name": "John Paul Tan",
+      "role": "Assistant Pastor",
+      "img": "/pastor-paul.jpg"
+    }
+  ]
+}

@@ -2,8 +2,12 @@
   --primary-color: rgb(46, 115, 245);
   --primary-color-extra-light: rgb(228, 234, 238);
   --primary-color-dark: rgb(0, 18, 53);
-
+  --color-grey: rgb(32, 38, 49);
   --border-soft: 3px;
+  --card-gap: 10px;
+  --card-gap-md: 20px;
+  --card-gap-lg: 30px;
+  --card-gap-xl: 40px;
 }
 
 // Reset
@@ -25,10 +29,6 @@ body {
   font-weight: 400;
 }
 
-section {
-  padding: 100px 20px;
-}
-
 a {
   color: black;
 }
@@ -39,6 +39,10 @@ img {
 
 [class*="col"] {
   padding: 0;
+}
+
+.border-bottom {
+  border-bottom: 1px solid var(--primary-color-extra-light);
 }
 
 // Typography
@@ -60,7 +64,6 @@ img {
 
 .subheading {
   font-size: 1.3rem;
-  margin-bottom: 7rem;
 }
 
 .bold {
@@ -69,6 +72,19 @@ img {
 
 .big-text {
   font-size: 5rem;
+}
+
+// Containers
+section {
+  padding: 100px 20px;
+}
+
+.section-heading {
+  margin-bottom: 3rem;
+}
+
+.section-main {
+  margin-bottom: 3rem;
 }
 
 // Main navigation
@@ -155,7 +171,7 @@ img {
   .container {
     height: 100%;
 
-    .content {
+    .section-main {
       height: inherit;
       align-items: end;
 
@@ -169,10 +185,8 @@ img {
 }
 
 #about-section {
-  border-bottom: 1px solid var(--primary-color-extra-light);
-
   .container {
-    .content {
+    .section-main {
       flex-direction: row-reverse;
 
       .info {
@@ -229,7 +243,7 @@ img {
 }
 
 #community-section {
-  .cards {
+  .section-main {
     .card-container {
       a {
         text-decoration: none;
@@ -318,12 +332,18 @@ img {
   background-color: var(--primary-color-dark);
   color: white;
 
-  .content {
+  .row {
     gap: 80px;
 
-    .images {
+    .section-heading {
+      p {
+        margin-bottom: 2rem;
+      }
+    }
+
+    .section-main {
       display: grid;
-      gap: 10px;
+      gap: var(--card-gap);
 
       img {
         width: 100%;
@@ -334,10 +354,35 @@ img {
         }
       }
     }
+  }
+}
 
-    .subheading {
-      p {
-        margin-bottom: 30px;
+#upcoming-events-section {
+  .section-heading {
+    justify-content: center;
+  }
+}
+
+#church-pastors {
+  background-color: var(--color-grey);
+  color: white;
+
+  .section-heading {
+    justify-content: center;
+  }
+
+  .section-main {
+    gap: var(--card-gap-xl);
+
+    .card-container {
+      &:nth-child(2) {
+        margin-top: 50px;
+      }
+
+      .card {
+        background-color: transparent;
+        border: none;
+        color: white;
       }
     }
   }
