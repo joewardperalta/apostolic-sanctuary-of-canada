@@ -124,18 +124,16 @@ export default function Home() {
             {groups?.data.map((group, index) => {
               return (
                 <Col key={index} className="card-container" lg={6}>
-                  <Link href="/kids">
-                    <Card className="ms-lg-0">
-                      <Card.Body>
-                        <Card.Title>{group.name}</Card.Title>
-                        <Card.Text>{group.description}</Card.Text>
-                        <Button variant="secondary">
-                          <i className="fa-solid fa-user"></i>
-                          Get connected
-                        </Button>
-                      </Card.Body>
-                    </Card>
-                  </Link>
+                  <Card>
+                    <Card.Body>
+                      <Card.Title>{group.name}</Card.Title>
+                      <Card.Text>{group.description}</Card.Text>
+                      <Button variant="secondary">
+                        <i className="fa-solid fa-user"></i>
+                        Get connected
+                      </Button>
+                    </Card.Body>
+                  </Card>
                 </Col>
               );
             })}

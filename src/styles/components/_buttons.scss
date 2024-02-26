@@ -1,0 +1,36 @@
+.btn {
+  font-weight: 500;
+
+  a {
+    text-decoration: none;
+  }
+}
+
+.btn-primary {
+  background-color: $primary-color;
+  border-radius: 0.2rem;
+  padding: 0.8rem 1.5rem;
+
+  a {
+    color: $primary-color-extra-light;
+  }
+}
+
+.btn-secondary {
+  background-color: transparent;
+  border: none;
+  padding: 0;
+
+  i {
+    margin-left: 0.7rem;
+    transition: margin-left 0.5s;
+  }
+
+  &:hover {
+    background-color: transparent;
+  }
+
+  &:hover i {
+    margin-left: 20px;
+  }
+}

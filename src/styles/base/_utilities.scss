@@ -1,0 +1,15 @@
+.border-bottom {
+  border-bottom: 1px solid var(--primary-color-extra-light);
+}
+
+section {
+  padding: 100px 20px;
+
+  .section-heading {
+    margin-bottom: 3rem;
+  }
+
+  .section-main {
+    margin-bottom: 3rem;
+  }
+}

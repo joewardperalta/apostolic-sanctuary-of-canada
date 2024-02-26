@@ -1,5 +1,5 @@
 import "bootstrap/dist/css/bootstrap.min.css";
-import "@/styles/styles.scss";
+import "@/styles/main.scss";
 import Layout from "@/components/layout";
 import { Poppins } from "next/font/google";
 import Script from "next/script";

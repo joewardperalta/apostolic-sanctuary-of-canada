@@ -1,0 +1,250 @@
+// Home page
+#hero-section {
+  color: white;
+  background-image: linear-gradient(
+      to right,
+      $primary-color-dark,
+      rgba(0, 0, 0, 0)
+    ),
+    url("/pastor.png");
+  background-size: cover;
+  background-position: top center;
+  height: calc(100vh - 89.594px);
+  padding: 200px 20px;
+
+  .container {
+    height: 100%;
+
+    .section-main {
+      height: inherit;
+      align-items: end;
+
+      .btn-secondary {
+        a {
+          color: white;
+        }
+      }
+    }
+  }
+}
+
+#about-section {
+  .container {
+    .section-main {
+      flex-direction: row-reverse;
+
+      .info {
+        .description {
+          margin-bottom: 2rem;
+        }
+      }
+
+      .photo img {
+        width: 100%;
+      }
+
+      .social-links {
+        margin-top: 30px;
+
+        .social-link {
+          margin-right: 30px;
+          text-decoration: none;
+          font-weight: 500;
+
+          i {
+            margin-left: 0;
+            margin-right: 8px;
+            font-size: 1.2rem;
+          }
+
+          // Facebook link
+          &:nth-child(1) {
+            i {
+              color: rgb(0, 132, 255);
+              transition: color 0.5s;
+            }
+
+            &:hover i {
+              color: rgb(0, 63, 122);
+            }
+          }
+
+          // Youtube link
+          &:nth-child(2) {
+            i {
+              color: rgb(255, 38, 0);
+              transition: color 0.5s;
+            }
+
+            &:hover i {
+              color: rgb(129, 19, 0);
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+#community-section {
+  .section-main {
+    gap: $card-gap;
+
+    .card-container {
+      a {
+        text-decoration: none;
+      }
+
+      .card {
+        height: 600px;
+        justify-content: end;
+        color: white;
+        padding: 1rem;
+        border: none;
+        margin: 0;
+        background-size: cover;
+        background-position: center;
+
+        .card-body {
+          flex-grow: 0;
+
+          .card-title {
+            font-size: 2rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+          }
+
+          .card-text {
+            margin-bottom: 2rem;
+          }
+
+          i {
+            margin-left: 0;
+            margin-right: 8px;
+          }
+        }
+      }
+
+      // Kids group card
+      &:nth-child(1) {
+        .card {
+          background-image: linear-gradient(
+              to top,
+              $primary-color-dark,
+              rgba(0, 0, 0, 0)
+            ),
+            url("/kids.jpg");
+        }
+      }
+
+      // Youth group card
+      &:nth-child(2) {
+        .card {
+          background-image: linear-gradient(
+              to top,
+              $primary-color-dark,
+              rgba(0, 0, 0, 0)
+            ),
+            url("/youth.jpg");
+        }
+      }
+
+      // Ladies group card
+      &:nth-child(3) {
+        .card {
+          background-image: linear-gradient(
+              to top,
+              $primary-color-dark,
+              rgba(0, 0, 0, 0)
+            ),
+            url("/ladies.jpg");
+        }
+      }
+
+      // Mens group card
+      &:nth-child(4) {
+        .card {
+          background-image: linear-gradient(
+              to top,
+              $primary-color-dark,
+              rgba(0, 0, 0, 0)
+            ),
+            url("/mens.jpg");
+        }
+      }
+    }
+  }
+}
+
+#services {
+  background-color: $primary-color-dark;
+  color: white;
+
+  .row {
+    gap: 80px;
+
+    .section-heading {
+      p {
+        margin-bottom: 2rem;
+      }
+    }
+
+    .section-main {
+      display: grid;
+      gap: $card-gap;
+
+      img {
+        width: 100%;
+
+        &:first-child {
+          grid-column: 1 / span 2;
+          grid-row: 1 / span 2;
+        }
+      }
+    }
+  }
+}
+
+#upcoming-events-section {
+  .section-heading {
+    justify-content: center;
+  }
+}
+
+#church-pastors {
+  background-color: $color-grey;
+  color: white;
+
+  .section-heading {
+    justify-content: center;
+  }
+
+  .section-main {
+    gap: $card-gap-xl;
+
+    .card-container {
+      &:nth-child(2) {
+        margin-top: 50px;
+      }
+
+      .card {
+        background-color: transparent;
+        border: none;
+        color: white;
+      }
+    }
+  }
+}
+
+// Large
+@media screen and (min-width: 992px) {
+  #community-section {
+    .section-main {
+      gap: $card-gap;
+
+      .card-container {
+        width: calc(50% - $card-gap);
+      }
+    }
+  }
+}

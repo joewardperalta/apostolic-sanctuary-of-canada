@@ -1,0 +1,21 @@
+.navbar {
+  padding: 0.3rem 0;
+
+  .navbar-brand {
+    img {
+      height: 70px;
+    }
+  }
+
+  #navbar-menu {
+    justify-content: end;
+
+    .navbar-nav {
+      gap: 1rem;
+
+      .nav-link {
+        color: black;
+      }
+    }
+  }
+}
