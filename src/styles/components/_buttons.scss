@@ -21,7 +21,8 @@
   border: none;
   padding: 0;
 
-  i {
+  .icon {
+    font-size: 1rem;
     margin-left: 0.7rem;
     transition: margin-left 0.5s;
   }

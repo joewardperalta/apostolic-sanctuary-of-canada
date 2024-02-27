@@ -11,22 +11,22 @@ export default function Footer() {
               <img className="logo" src="/church-logo.png" alt="church logo" />
             </Col>
             <Col>
-              <div>
-                <p>
-                  <i className="fa-solid fa-phone"></i>
-                  (123) 456-7890
-                </p>
+              <div className="icon phone-icon">
+                <i className="fa-solid fa-phone"></i>
+                (123) 456-7890
               </div>
-              <div>
-                <Link href="mailto:sample@gmail.com">
-                  <i className="fa-solid fa-envelope-open-text"></i>
-                  sample@gmail.com
-                </Link>
-              </div>
+              <Link
+                className="icon envelope-open-text-icon"
+                href="mailto:sample@gmail.com"
+              >
+                <i className="icon envelope-op-icon fa-solid fa-envelope-open-text"></i>
+                sample@gmail.com
+              </Link>
             </Col>
           </Row>
 
           <Row id="footer-navigations">
+            {/* heading */}
             <Col lg={5}>
               <h4>
                 Join us in The Apostolic Sanctuary of Canada as we glorify and
@@ -34,11 +34,15 @@ export default function Footer() {
               </h4>
               <Button variant="secondary">
                 <Link href="ministries-and-services">
-                  Get involve in the ministry
-                  <i className="fa-solid fa-arrow-right"></i>
+                  <div className="icon">
+                    Get involve in the ministry
+                    <i className="icon fa-solid fa-arrow-right"></i>
+                  </div>
                 </Link>
               </Button>
             </Col>
+
+            {/* navigation */}
             <Col>
               <Row>
                 <Col>
@@ -76,9 +80,28 @@ export default function Footer() {
             </Col>
           </Row>
 
+          {/* copyright */}
           <Row id="footer-license">
             <Col>
               <p>&copy; 2024 by The Apostolic Sanctuary of Canada.</p>
+            </Col>
+            <Col className="text-end">
+              <div className="social-links">
+                <Link
+                  className="icon facebook-icon"
+                  href="https://www.facebook.com/apostolicsanctuarycanada"
+                  target="_blank"
+                >
+                  <i className="fa-brands fa-facebook"></i>
+                </Link>
+                <Link
+                  className="icon youtube-icon"
+                  href="https://www.youtube.com/@theapostolicsanctuaryofcan4004"
+                  target="_blank"
+                >
+                  <i className="fa-brands fa-youtube"></i>
+                </Link>
+              </div>
             </Col>
           </Row>
         </Container>

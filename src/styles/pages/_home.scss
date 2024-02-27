@@ -50,36 +50,6 @@
             margin-right: 30px;
             text-decoration: none;
             font-weight: 500;
-
-            i {
-              margin-left: 0;
-              margin-right: 8px;
-              font-size: 1.2rem;
-            }
-
-            // Facebook link
-            &:nth-child(1) {
-              i {
-                color: rgb(0, 132, 255);
-                transition: color 0.5s;
-              }
-
-              &:hover i {
-                color: rgb(0, 63, 122);
-              }
-            }
-
-            // Youtube link
-            &:nth-child(2) {
-              i {
-                color: rgb(255, 38, 0);
-                transition: color 0.5s;
-              }
-
-              &:hover i {
-                color: rgb(129, 19, 0);
-              }
-            }
           }
         }
       }
@@ -116,11 +86,6 @@
 
             .card-text {
               margin-bottom: 2rem;
-            }
-
-            i {
-              margin-left: 0;
-              margin-right: 8px;
             }
           }
         }

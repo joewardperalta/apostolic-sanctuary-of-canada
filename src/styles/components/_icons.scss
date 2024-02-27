@@ -1,0 +1,66 @@
+.icon {
+  cursor: pointer;
+
+  i {
+    margin-left: 0;
+    margin-right: 8px;
+    font-size: 1.2rem;
+    transition: color 0.5s;
+  }
+}
+
+.facebook-icon {
+  i {
+    color: rgb(0, 132, 255);
+  }
+
+  &:hover {
+    i {
+      color: rgb(0, 63, 122);
+    }
+  }
+}
+
+.youtube-icon {
+  i {
+    color: rgb(255, 38, 0);
+  }
+
+  &:hover {
+    i {
+      color: rgb(129, 19, 0);
+    }
+  }
+}
+
+.phone-icon {
+  i {
+    color: rgb(4, 189, 4);
+  }
+
+  &:hover {
+    i {
+      color: rgb(0, 102, 0);
+    }
+  }
+}
+
+.envelope-open-text-icon {
+  i {
+    color: rgb(0, 132, 255);
+  }
+
+  &:hover {
+    i {
+      color: rgb(0, 63, 122);
+    }
+  }
+}
+
+.user-icon {
+  &:hover {
+    i {
+      color: rgb(4, 189, 4);
+    }
+  }
+}

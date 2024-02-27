@@ -40,7 +40,7 @@ export default function Home() {
               <Link href="/ministries-and-services">
                 <Button variant="secondary">
                   Visit our church
-                  <i className="fa-solid fa-arrow-right"></i>
+                  <i className="icon fa-solid fa-arrow-right"></i>
                 </Button>
               </Link>
             </Col>
@@ -77,9 +77,11 @@ export default function Home() {
                   updated on upcoming events and watch our live services. We
                   hope to see you soon.
                 </p>
+
+                {/* social links */}
                 <div className="social-links">
                   <Link
-                    className="social-link"
+                    className="social-link icon facebook-icon"
                     href="https://www.facebook.com/apostolicsanctuarycanada"
                     target="_blank"
                   >
@@ -87,7 +89,7 @@ export default function Home() {
                     Facebook page
                   </Link>
                   <Link
-                    className="social-link"
+                    className="social-link icon youtube-icon"
                     href="https://www.youtube.com/@theapostolicsanctuaryofcan4004"
                     target="_blank"
                   >
@@ -139,16 +141,19 @@ export default function Home() {
             {groups?.data.map((group, index) => {
               return (
                 <Col key={index} className="card-container" lg={6}>
-                  <Card>
-                    <Card.Body>
-                      <Card.Title>{group.name}</Card.Title>
-                      <Card.Text>{group.description}</Card.Text>
-                      <Button variant="secondary">
+                  <Link
+                    href={"/" + group.name.split(" ")[0].toLowerCase()}
+                    className="icon user-icon"
+                  >
+                    <Card>
+                      <Card.Body>
+                        <Card.Title>{group.name}</Card.Title>
+                        <Card.Text>{group.description}</Card.Text>
                         <i className="fa-solid fa-user"></i>
                         Get connected
-                      </Button>
-                    </Card.Body>
-                  </Card>
+                      </Card.Body>
+                    </Card>
+                  </Link>
                 </Col>
               );
             })}
