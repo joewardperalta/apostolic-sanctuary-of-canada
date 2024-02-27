@@ -1,0 +1,58 @@
+#about-page {
+  .section-heading {
+    justify-content: center;
+  }
+
+  .section-main {
+    .photos {
+      position: relative;
+
+      img {
+        width: 40%;
+        position: absolute;
+        box-shadow: 0 5px 5px rgb(160, 160, 160);
+        padding: 10px;
+        background-color: white;
+      }
+    }
+  }
+
+  #mission {
+    .photos {
+      img {
+        &:first-child {
+          right: 45%;
+          backface-visibility: hidden;
+          -webkit-backface-visibility: hidden;
+          transform: rotate(12deg);
+        }
+
+        &:last-child {
+          right: -10px;
+        }
+      }
+    }
+  }
+
+  #commitment {
+    .photos {
+      img {
+        &:first-child {
+          top: 60%;
+          right: 45%;
+          backface-visibility: hidden;
+          -webkit-backface-visibility: hidden;
+          transform: rotate(-5deg);
+        }
+
+        &:last-child {
+          top: 80%;
+          right: -10px;
+          backface-visibility: hidden;
+          -webkit-backface-visibility: hidden;
+          transform: rotate(5deg);
+        }
+      }
+    }
+  }
+}

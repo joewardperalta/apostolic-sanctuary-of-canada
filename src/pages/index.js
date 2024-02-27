@@ -17,36 +17,46 @@ export default function Home() {
   }, []);
 
   return (
-    <>
+    <div id="home-page">
+      {/* Hero section */}
       <section id="hero-section">
         <Container>
           <Row className="section-main">
             <Col md={12} lg={7}>
+              {/* title */}
               <h1 className="title">
                 Jesus is the <span className="bold big-text">Way</span> the{" "}
                 <span className="bold big-text">Truth</span> and the{" "}
                 <span className="bold big-text">Life</span>.
               </h1>
+
+              {/* subtitle */}
               <p className="subtitle">
                 Join us at The Apostolic Sanctuary of Canada Church as we praise
                 and worship our one true God Jesus Christ.
               </p>
-              <Button variant="secondary">
-                <Link href="/ministries-and-services">
+
+              {/* link to ministries and services page */}
+              <Link href="/ministries-and-services">
+                <Button variant="secondary">
                   Visit our church
                   <i className="fa-solid fa-arrow-right"></i>
-                </Link>
-              </Button>
+                </Button>
+              </Link>
             </Col>
           </Row>
         </Container>
       </section>
 
+      {/* About section */}
       <section className="border-bottom" id="about-section">
         <Container>
           <Row className="section-main">
             <Col className="info mb-5 mb-lg-0">
+              {/* heading */}
               <h2 className="heading">Who We Are</h2>
+
+              {/* about us description */}
               <div className="description">
                 <p>
                   We are a Filipino Pentecostal Church and our mission is to
@@ -86,23 +96,28 @@ export default function Home() {
                   </Link>
                 </div>
               </div>
-              <Button variant="secondary">
-                <Link href="/about">
+
+              {/* link to about page */}
+              <Link href="/about">
+                <Button variant="secondary">
                   Learn more
                   <i className="fa-solid fa-arrow-right"></i>
-                </Link>
-              </Button>
+                </Button>
+              </Link>
             </Col>
 
+            {/* apostolic church family image */}
             <Col className="photo me-lg-5" lg={6}>
-              <img src="/church-family.jpg"></img>
+              <img src="/church-family.jpg" alt="apostolic church family" />
             </Col>
           </Row>
         </Container>
       </section>
 
+      {/* Community section */}
       <section id="community-section">
         <Container>
+          {/* heading */}
           <Row className="section-heading">
             <Col className="pe-5" lg={6}>
               <h2 className="heading">
@@ -119,7 +134,7 @@ export default function Home() {
             </Col>
           </Row>
 
-          {/* List of church departments */}
+          {/* list of church departments */}
           <Row className="section-main">
             {groups?.data.map((group, index) => {
               return (
@@ -141,9 +156,11 @@ export default function Home() {
         </Container>
       </section>
 
-      <section id="services">
+      {/* Services section */}
+      <section id="services-section">
         <Container>
           <Row>
+            {/* heading */}
             <Col className="section-heading" lg={6}>
               <h2 className="heading">Join our Church Services</h2>
               <div className="subheading">
@@ -152,25 +169,26 @@ export default function Home() {
                   do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                   Viverra ipsum nunc aliquet bibendum enim.
                 </p>
-                <Button variant="primary">
-                  <Link href="/ministries-and-services">
-                    Ministries and Services
-                  </Link>
-                </Button>
+                <Link href="/ministries-and-services">
+                  <Button variant="primary">Ministries and Services</Button>
+                </Link>
               </div>
             </Col>
 
+            {/* images */}
             <Col className="section-main">
-              <img src="/praise-and-worship-1.jpg"></img>
-              <img src="/praise-and-worship-2.jpg"></img>
-              <img src="/praise-and-worship-3.jpg"></img>
+              <img src="/praise-and-worship-1.jpg" alt="praise and worship" />
+              <img src="/praise-and-worship-2.jpg" alt="praise and worship" />
+              <img src="/praise-and-worship-3.jpg" alt="praise and worship" />
             </Col>
           </Row>
         </Container>
       </section>
 
+      {/* Upcoming events section */}
       <section className="border-bottom" id="upcoming-events-section">
         <Container className="text-center">
+          {/* heading */}
           <Row className="section-heading">
             <Col lg={8}>
               <h2 className="heading">Upcoming Events and Services</h2>
@@ -183,24 +201,28 @@ export default function Home() {
             </Col>
           </Row>
 
+          {/* main content */}
           <Row className="section-main">
             <Col>
-              <img src="/SWR- Jan 30_001.webp"></img>
+              <img src="/SWR- Jan 30_001.webp" alt="upcoming events" />
             </Col>
           </Row>
 
+          {/* link to events page */}
           <Row className="section-footer">
             <Col>
-              <Button variant="primary">
-                <Link href="/events">See all our upcoming events</Link>
-              </Button>
+              <Link href="/events">
+                <Button variant="primary">See all our upcoming events</Button>
+              </Link>
             </Col>
           </Row>
         </Container>
       </section>
 
+      {/* Church pastors section */}
       <section id="church-pastors">
         <Container>
+          {/* heading */}
           <Row className="section-heading text-center">
             <Col lg={7}>
               <h2 className="heading">The Pastors of Our Church</h2>
@@ -229,6 +251,6 @@ export default function Home() {
           </Row>
         </Container>
       </section>
-    </>
+    </div>
   );
 }

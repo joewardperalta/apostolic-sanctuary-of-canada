@@ -4,7 +4,7 @@ import Link from "next/link";
 export default function Footer() {
   return (
     <>
-      <section id="footer-section">
+      <section className="border-top" id="footer-section">
         <Container>
           <Row id="footer-contacts">
             <Col>
@@ -13,13 +13,13 @@ export default function Footer() {
             <Col>
               <div>
                 <p>
-                  <i class="fa-solid fa-phone"></i>
+                  <i className="fa-solid fa-phone"></i>
                   (123) 456-7890
                 </p>
               </div>
               <div>
                 <Link href="mailto:sample@gmail.com">
-                  <i class="fa-solid fa-envelope-open-text"></i>
+                  <i className="fa-solid fa-envelope-open-text"></i>
                   sample@gmail.com
                 </Link>
               </div>
