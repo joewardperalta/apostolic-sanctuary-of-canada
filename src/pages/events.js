@@ -5,9 +5,7 @@ export default function Events() {
   const [events, setEvents] = useState();
 
   useEffect(() => {
-    fetch(
-      "https://apostolic-sanctuary-of-canada-25cd3eoga.vercel.app/api/events"
-    )
+    fetch("https://apostolic-sanctuary-of-canada.vercel.app/api/events")
       .then((res) => res.json())
       .then((data) => setEvents(data));
   }, []);
