@@ -7,11 +7,15 @@ export default function Home() {
   const [pastors, setPastors] = useState();
 
   useEffect(() => {
-    fetch("http://localhost:3000/api/groups")
+    fetch(
+      "https://apostolic-sanctuary-of-canada-25cd3eoga.vercel.app/api/groups"
+    )
       .then((res) => res.json())
       .then((data) => setGroups(data));
 
-    fetch("http://localhost:3000/api/pastors")
+    fetch(
+      "https://apostolic-sanctuary-of-canada-25cd3eoga.vercel.app/api/pastors"
+    )
       .then((res) => res.json())
       .then((data) => setPastors(data));
   }, []);
