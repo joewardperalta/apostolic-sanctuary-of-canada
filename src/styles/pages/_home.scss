@@ -58,7 +58,7 @@
 
   #community-section {
     .section-main {
-      gap: $gap;
+      gap: $gap-lg;
 
       .card-container {
         a {
@@ -170,6 +170,12 @@
     }
   }
 
+  #upcoming-events-section {
+    .section-main {
+      justify-content: center;
+    }
+  }
+
   #church-pastors {
     background-color: $color-grey;
     color: white;
@@ -196,10 +202,16 @@
   @media screen and (min-width: $large) {
     #community-section {
       .section-main {
-        gap: $gap;
-
         .card-container {
-          width: calc(50% - $gap);
+          width: calc(50% - $gap-lg);
+        }
+      }
+    }
+
+    #church-pastors {
+      .section-main {
+        .card-container {
+          width: calc(33% - $gap-xl);
         }
       }
     }

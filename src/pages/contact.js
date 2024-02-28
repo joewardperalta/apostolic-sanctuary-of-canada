@@ -1,4 +1,5 @@
 import { Container, Row, Col } from "react-bootstrap";
+import Link from "next/link";
 
 export default function Contact() {
   return (
@@ -8,41 +9,40 @@ export default function Contact() {
           <Col lg={7}>
             <h1 className="title">Contact Us</h1>
             <p className="subtitle">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              If you have any questions and concerns please contact us.
             </p>
           </Col>
         </Row>
         <Row className="section-main">
-          <Col>
+          <Col lg={4}>
             <div className="icon-container">
               <i className="fa-solid fa-location-dot"></i>
             </div>
             <h5>Address</h5>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            </p>
+            <p>3-1177 Finch Ave W, North York, ON M3J 2E9</p>
+            <ul>
+              <li>Monday: 12-4pm</li>
+              <li>Wednesday: 7-10pm</li>
+              <li>Friday: 7:30-11:30pm</li>
+              <li>Saturday: 5-9pm</li>
+              <li>Sunday: 10am-3pm</li>
+            </ul>
           </Col>
-          <Col>
+          <Col lg={4}>
             <div className="icon-container">
               <i className="fa-solid fa-mobile-screen-button"></i>
             </div>
             <h5>Phone</h5>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            </p>
+            <p>(416) 421-0994</p>
           </Col>
-          <Col>
+          <Col lg={4}>
             <div className="icon-container">
               <i className="fa-solid fa-at"></i>
             </div>
             <h5>Email</h5>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            </p>
+            <Link href="mailto:myapostolicsanctuary@gmail.com">
+              myapostolicsanctuary@gmail.com
+            </Link>
           </Col>
         </Row>
       </Container>

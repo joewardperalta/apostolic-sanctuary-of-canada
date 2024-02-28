@@ -19,8 +19,8 @@ export default function Events() {
           <Col lg={7}>
             <h1 className="title">Upcoming Events</h1>
             <p className="subtitle">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              Please check our upcoming events and save a date to your
+              calendars.
             </p>
           </Col>
         </Row>

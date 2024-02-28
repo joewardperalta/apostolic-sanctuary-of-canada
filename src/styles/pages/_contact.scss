@@ -6,11 +6,15 @@
   .section-main {
     gap: $gap-xl;
 
-    .col {
+    [class*="col"] {
       display: flex;
       align-items: center;
       flex-direction: column;
       gap: $gap;
+    }
+
+    a {
+      text-decoration: none;
     }
 
     h5 {
@@ -25,6 +29,17 @@
       width: 80px;
       font-size: 2rem;
       color: white;
+    }
+  }
+}
+
+// Large screen >= 992px
+@media screen and (min-width: $large) {
+  #contact-us-page {
+    .section-main {
+      [class*="col"] {
+        width: calc(33% - $gap-lg);
+      }
     }
   }
 }

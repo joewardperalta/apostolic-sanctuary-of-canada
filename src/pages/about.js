@@ -29,7 +29,7 @@ export default function About() {
                 Gospel to all nations and people.
               </p>
             </Col>
-            <Col className="photos">
+            <Col className="photos" sm={0} lg={6}>
               <div className="photo">
                 <div className="frame">
                   <img
@@ -72,7 +72,7 @@ export default function About() {
                 minister with the love of God.
               </p>
             </Col>
-            <Col className="photos">
+            <Col className="photos" sm={0} lg={6}>
               <div className="photo">
                 <div className="frame">
                   <img

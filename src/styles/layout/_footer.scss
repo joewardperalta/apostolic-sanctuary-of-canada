@@ -7,6 +7,7 @@
 
   #footer-contacts {
     margin-bottom: 50px;
+    gap: $gap-xl;
 
     p {
       margin-bottom: 0;
@@ -20,7 +21,6 @@
       &:last-child {
         display: flex;
         align-items: center;
-        justify-content: flex-end;
 
         div {
           &:first-child {
@@ -33,6 +33,7 @@
 
   #footer-navigations {
     margin-bottom: 80px;
+    gap: $gap-xl;
 
     h4 {
       margin-bottom: 30px;
@@ -49,16 +50,32 @@
       }
     }
 
-    .col {
-      &:last-child {
-        display: flex;
-        justify-content: flex-end;
-        line-height: 2;
-      }
+    .navigation {
+      display: flex;
+      line-height: 2;
     }
+  }
+
+  #footer-license {
+    color: black;
   }
 }
 
-#footer-license {
-  color: black;
+// Large screen >= 992px
+@media screen and (min-width: $large) {
+  #footer-section {
+    #footer #footer-navigations {
+      .navigation {
+        justify-content: end;
+      }
+    }
+
+    #footer-contacts {
+      .col {
+        &:last-child {
+          justify-content: flex-end;
+        }
+      }
+    }
+  }
 }

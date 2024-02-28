@@ -7,20 +7,20 @@ export default function Footer() {
       <section className="border-top" id="footer-section">
         <Container>
           <Row id="footer-contacts">
-            <Col>
+            <Col sm={4}>
               <img className="logo" src="/church-logo.png" alt="church logo" />
             </Col>
             <Col>
               <div className="icon phone-icon">
                 <i className="fa-solid fa-phone"></i>
-                (123) 456-7890
+                (416) 421-0994
               </div>
               <Link
                 className="icon envelope-open-text-icon"
-                href="mailto:sample@gmail.com"
+                href="mailto:myapostolicsanctuary@gmail.com"
               >
                 <i className="icon envelope-op-icon fa-solid fa-envelope-open-text"></i>
-                sample@gmail.com
+                myapostolicsanctuary@gmail.com
               </Link>
             </Col>
           </Row>
@@ -34,16 +34,14 @@ export default function Footer() {
               </h4>
               <Button variant="secondary">
                 <Link href="ministries-and-services">
-                  <div className="icon">
-                    Get involve in the ministry
-                    <i className="icon fa-solid fa-arrow-right"></i>
-                  </div>
+                  Get involve in the ministry
+                  <i className="icon fa-solid fa-arrow-right"></i>
                 </Link>
               </Button>
             </Col>
 
             {/* navigation */}
-            <Col>
+            <Col className="navigation">
               <Row>
                 <Col>
                   <ul>

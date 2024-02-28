@@ -147,9 +147,12 @@ export default function Home() {
               <h2 className="heading">Join our Church Services</h2>
               <div className="subheading">
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  Viverra ipsum nunc aliquet bibendum enim.
+                  We meet every Sunday at The Apostolic Sanctuary of Canada. The
+                  service starts at 11am and ends at 2pm.
+                </p>
+                <p>
+                  If you need further information about our services please
+                  click the button below.
                 </p>
                 <Link href="/ministries-and-services">
                   <Button variant="primary">Ministries and Services</Button>
@@ -173,14 +176,16 @@ export default function Home() {
               <h2 className="heading">Upcoming Events and Services</h2>
               <div className="subheading">
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Please check the announcements, reminders, and upcoming
+                  services and events so that you are aware of what's coming.
+                  You can also see all of our upcoming events by clicking the
+                  button below.
                 </p>
               </div>
             </Col>
           </Row>
           <Row className="section-main">
-            <Col>
+            <Col lg={8}>
               <img src="/SWR- Jan 30_001.webp" alt="upcoming events" />
             </Col>
           </Row>
@@ -201,8 +206,8 @@ export default function Home() {
             <Col lg={7}>
               <h2 className="heading">The Pastors of Our Church</h2>
               <p className="subheading">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                We dedicate our full support and loyalty to our pastors because
+                without them we wouldn't be able to know about Jesus Christ.
               </p>
             </Col>
           </Row>
@@ -211,7 +216,7 @@ export default function Home() {
           <Row className="section-main text-center">
             {pastors?.data.map((pastor, index) => {
               return (
-                <Col key={index} className="card-container">
+                <Col key={index} className="card-container" lg={4}>
                   <Card>
                     <Card.Img
                       variant="top"

@@ -1,14 +1,15 @@
 #ministries-and-services-page {
   .section-main {
-    padding: 120px 0;
+    text-align: center;
 
     .images {
+      display: none;
       position: relative;
 
       .background-box {
         position: absolute;
         top: -50px;
-        height: 180%;
+        height: 250px;
         width: 60%;
         background-color: $primary-color;
         border-radius: $border-soft;
@@ -96,6 +97,19 @@
             right: 120px;
           }
         }
+      }
+    }
+  }
+}
+
+// Large screen >= 992px
+@media screen and (min-width: $large) {
+  #ministries-and-services-page {
+    .section-main {
+      padding: 120px 0;
+
+      .images {
+        display: block;
       }
     }
   }

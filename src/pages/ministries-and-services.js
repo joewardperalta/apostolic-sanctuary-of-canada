@@ -9,21 +9,20 @@ export default function MinistriesAndServices() {
           <Col lg={7}>
             <h1 className="title">Ministries and Services</h1>
             <p className="subtitle">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              Join us on our weekly services and be a part of our ministry.
             </p>
           </Col>
         </Row>
 
         {/* section for sunday service */}
         <Row className="section-main" id="sunday-service">
-          <Col className="description">
+          <Col className="description" lg={6}>
             <h2 className="heading">Sunday Service</h2>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua.
-              Quisque egestas diam in arcu cursus euismod quis viverra nibh.
-              Massa tincidunt dui ut ornare.
+              See you every Sunday starting at 10:30am for prayer and devotion,
+              11am for praise and worship, 12:30pm for the preaching and will
+              end at 2pm. You are more than welcome to stay after the service
+              for fellowship.
             </p>
           </Col>
           <Col className="images">
@@ -51,12 +50,12 @@ export default function MinistriesAndServices() {
 
         {/* section for friday service */}
         <Row className="section-main" id="friday-service">
-          <Col className="description">
+          <Col className="description" lg={6}>
             <h2 className="heading">Friday Service</h2>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua.
-              Scelerisque mauris pellentesque pulvinar pellentesque.
+              See you every Friday starting at 8:00pm for praise and worship,
+              8:40pm for victory report, 9:00pm for the exhortation, and prayer
+              and devotion at 9:30pm until 10:00pm. We hope to see you soon!
             </p>
           </Col>
           <Col className="images">
@@ -84,12 +83,17 @@ export default function MinistriesAndServices() {
 
         {/* section for christian education program */}
         <Row className="section-main" id="christian-education-program">
-          <Col className="description">
+          <Col className="description" lg={6}>
             <h2 className="heading">Christian Education Program</h2>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Quam
-              elementum pulvinar etiam non.
+              Christian Education Program is seasonal and usually starts every
+              Sunday at 10:30am and ends at 11:00am. This March 2024 the program
+              will begin and so the time for prayer and devotion will be
+              adjusted at 10:00am.
+            </p>
+            <p>
+              If you want to learn more about the bible and theology please come
+              on Sunday.
             </p>
           </Col>
           <Col className="images">
