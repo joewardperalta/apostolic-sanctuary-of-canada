@@ -17,14 +17,8 @@ export default function MainNav() {
                 Ministries & Services
               </NavDropdown.Item>
               <NavDropdown.Item href="/events">Events</NavDropdown.Item>
-              <NavDropdown.Item href="/location">Location</NavDropdown.Item>
             </NavDropdown>
-            <NavDropdown title="Get Connected" id="get-connected">
-              <NavDropdown.Item href="/kids">Kids Group</NavDropdown.Item>
-              <NavDropdown.Item href="/youth">Youth Group</NavDropdown.Item>
-              <NavDropdown.Item href="/ladies">Ladies Group</NavDropdown.Item>
-              <NavDropdown.Item href="/mens">Mens Group</NavDropdown.Item>
-            </NavDropdown>
+            <Nav.Link href="/location">Location</Nav.Link>
             <Nav.Link href="/contact">Contact Us</Nav.Link>
           </Nav>
         </Navbar.Collapse>

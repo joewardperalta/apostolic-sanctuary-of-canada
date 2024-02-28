@@ -69,9 +69,6 @@ export default function Footer() {
                       <Link href="/location">Location</Link>
                     </li>
                     <li>
-                      <Link href="/give">Give</Link>
-                    </li>
-                    <li>
                       <Link href="/contact">Contact Us</Link>
                     </li>
                   </ul>

@@ -32,7 +32,7 @@ export default function Home() {
                 Join us at The Apostolic Sanctuary of Canada Church as we praise
                 and worship our one true God Jesus Christ.
               </p>
-              <Link href="/ministries-and-services">
+              <Link href="/location">
                 <Button variant="secondary">
                   Visit our church
                   <i className="icon fa-solid fa-arrow-right"></i>
@@ -62,7 +62,7 @@ export default function Home() {
                   We meet in our humble church every Sunday at 11am located in
                   1177 Finch Ave West building number 3. Please see the full
                   details on our ministries and services{" "}
-                  <Link href="/minstries-and-services">here</Link>.
+                  <Link href="/ministries-and-services">here</Link>.
                 </p>
                 <p>
                   Follow us on our Facebook page to know more about us, be
@@ -126,19 +126,12 @@ export default function Home() {
             {groups?.data.map((group, index) => {
               return (
                 <Col key={index} className="card-container" lg={6}>
-                  <Link
-                    href={"/" + group.name.split(" ")[0].toLowerCase()}
-                    className="icon user-icon"
-                  >
-                    <Card>
-                      <Card.Body>
-                        <Card.Title>{group.name}</Card.Title>
-                        <Card.Text>{group.description}</Card.Text>
-                        <i className="fa-solid fa-user"></i>
-                        Get connected
-                      </Card.Body>
-                    </Card>
-                  </Link>
+                  <Card>
+                    <Card.Body>
+                      <Card.Title>{group.name}</Card.Title>
+                      <Card.Text>{group.description}</Card.Text>
+                    </Card.Body>
+                  </Card>
                 </Col>
               );
             })}
