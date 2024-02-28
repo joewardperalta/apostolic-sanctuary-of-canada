@@ -1,0 +1,30 @@
+#contact-us-page {
+  .section-heading {
+    justify-content: center;
+  }
+
+  .section-main {
+    gap: $gap-xl;
+
+    .col {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      gap: $gap;
+    }
+
+    h5 {
+      font-weight: 600;
+      text-transform: uppercase;
+    }
+
+    .icon-container {
+      padding: 15px;
+      background-color: $primary-color;
+      border-radius: 100%;
+      width: 80px;
+      font-size: 2rem;
+      color: white;
+    }
+  }
+}
