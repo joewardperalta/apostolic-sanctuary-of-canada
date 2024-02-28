@@ -9,8 +9,8 @@ export default function About() {
           {/* heading */}
           <Row className="section-heading text-center">
             <Col lg={7}>
-              <h1 className="heading">About Us</h1>
-              <p className="subheading">
+              <h1 className="title">About Us</h1>
+              <p className="subtitle">
                 It contains everything you need to know about our mission,
                 commitment, rights and privileges, and articles of faith.
               </p>
@@ -20,7 +20,7 @@ export default function About() {
           {/* our mission */}
           <Row className="section-main" id="mission">
             <Col>
-              <h2>Our Mission</h2>
+              <h2 className="heading">Our Mission</h2>
               <p>
                 To Carry out the Commission of our Lord Jesus Christ; to preach,
                 teach and make disciples; to serve and help our communities
@@ -30,21 +30,30 @@ export default function About() {
               </p>
             </Col>
             <Col className="photos">
-              <img
-                src="/IMG_0157.png"
-                alt="The Apostolic Sanctuary of Canada Congregation"
-              />
-              <img
-                src="/IMG_3756.png"
-                alt="The Apostolic Sanctuary of Canada Congregation"
-              />
+              <div className="photo">
+                <div className="frame">
+                  <img
+                    src="/IMG_0157.png"
+                    alt="The Apostolic Sanctuary of Canada Congregation"
+                  />
+                </div>
+              </div>
+
+              <div className="photo">
+                <div className="frame">
+                  <img
+                    src="/IMG_3756.png"
+                    alt="The Apostolic Sanctuary of Canada Congregation"
+                  />
+                </div>
+              </div>
             </Col>
           </Row>
 
           {/* our commitment */}
           <Row className="section-main" id="commitment">
             <Col>
-              <h2>Our Commitment</h2>
+              <h2 className="heading">Our Commitment</h2>
               <p>
                 Our Commitment is to preserve the holiness of the Church, to
                 preserve the principles and truths of the Bible; to adopt those
@@ -64,21 +73,30 @@ export default function About() {
               </p>
             </Col>
             <Col className="photos">
-              <img
-                src="/IMG_0161.png"
-                alt="The Apostolic Sanctuary of Canada Congregation"
-              />
-              <img
-                src="/IMG_3760.png"
-                alt="The Apostolic Sanctuary of Canada Congregation"
-              />
+              <div className="photo">
+                <div className="frame">
+                  <img
+                    src="/IMG_0161.png"
+                    alt="The Apostolic Sanctuary of Canada Congregation"
+                  />
+                </div>
+              </div>
+
+              <div className="photo">
+                <div className="frame">
+                  <img
+                    src="/IMG_3760.png"
+                    alt="The Apostolic Sanctuary of Canada Congregation"
+                  />
+                </div>
+              </div>
             </Col>
           </Row>
 
           {/* our rights and privileges */}
           <Row className="section-main" id="rights-and-privileges">
-            <Col>
-              <h2>Our Rights and Privileges</h2>
+            <Col lg={6}>
+              <h2 className="heading">Our Rights and Privileges</h2>
               <p>
                 We hold the right and privilege to be Apostolic in worship, in
                 lifestyle and in all conduct. We have the right to worship God
@@ -89,13 +107,12 @@ export default function About() {
                 costs, hold to these rights and privileges.
               </p>
             </Col>
-            <Col className="photos"></Col>
           </Row>
 
           {/* our articles of faith */}
           <Row className="section-main" id="articles-of-faith ">
-            <Col>
-              <h2>Our Ourticles of Faith</h2>
+            <Col lg={6}>
+              <h2 className="heading">Our Aticles of Faith</h2>
               <p>Tap or click the Link below to read our Articles of Faith.</p>
 
               {/* link to pdf version of articles of faith */}

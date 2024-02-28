@@ -1,0 +1,22 @@
+{
+  "data": [
+    {
+      "title": "Leadership Training",
+      "subtitle": "February 2024",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "img": {
+        "src": "/leadership-training.jpg",
+        "alt": "leadership training"
+      }
+    },
+    {
+      "title": "Preloved Clothes Selling",
+      "subtitle": "March 2024",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "img": {
+        "src": "/Youth Preloved Clothes.jpg",
+        "alt": "Youth Preloved Clothes"
+      }
+    }
+  ]
+}

@@ -10,10 +10,15 @@ section {
   padding: 100px 20px;
 
   .section-heading {
+    justify-content: center;
     margin-bottom: 3rem;
   }
 
   .section-main {
     margin-bottom: 3rem;
   }
+}
+
+.active {
+  color: $primary-color !important;
 }

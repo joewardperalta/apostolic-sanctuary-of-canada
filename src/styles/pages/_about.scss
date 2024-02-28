@@ -1,25 +1,18 @@
 #about-page {
-  .section-heading {
-    justify-content: center;
-  }
-
   .section-main {
     .photos {
       position: relative;
 
-      img {
-        width: 40%;
+      .photo {
         position: absolute;
-        box-shadow: 0 5px 5px rgb(160, 160, 160);
-        padding: 10px;
-        background-color: white;
+        width: 40%;
       }
     }
   }
 
   #mission {
     .photos {
-      img {
+      .photo {
         &:first-child {
           right: 45%;
           backface-visibility: hidden;
@@ -36,7 +29,7 @@
 
   #commitment {
     .photos {
-      img {
+      .photo {
         &:first-child {
           top: 60%;
           right: 45%;

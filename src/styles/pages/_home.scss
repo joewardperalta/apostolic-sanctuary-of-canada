@@ -170,19 +170,9 @@
     }
   }
 
-  #upcoming-events-section {
-    .section-heading {
-      justify-content: center;
-    }
-  }
-
   #church-pastors {
     background-color: $color-grey;
     color: white;
-
-    .section-heading {
-      justify-content: center;
-    }
 
     .section-main {
       gap: $gap-xl;
@@ -196,6 +186,7 @@
           background-color: transparent;
           border: none;
           color: white;
+          box-shadow: none;
         }
       }
     }

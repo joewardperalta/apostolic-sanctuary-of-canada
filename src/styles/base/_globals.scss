@@ -15,7 +15,7 @@ a {
 
 img {
   width: auto;
-  border-radius: var(--border-soft);
+  border-radius: $border-soft;
 }
 
 [class*="col"] {

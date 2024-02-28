@@ -1,0 +1,11 @@
+.photo {
+  .frame {
+    padding: 10px;
+    background-color: white;
+    box-shadow: $shadow;
+
+    img {
+      width: 100%;
+    }
+  }
+}

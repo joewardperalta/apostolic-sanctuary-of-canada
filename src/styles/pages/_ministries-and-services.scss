@@ -1,0 +1,102 @@
+#ministries-and-services-page {
+  .section-main {
+    padding: 120px 0;
+
+    .images {
+      position: relative;
+
+      .background-box {
+        position: absolute;
+        top: -50px;
+        height: 180%;
+        width: 60%;
+        background-color: $primary-color;
+        border-radius: $border-soft;
+      }
+
+      .photos {
+        position: relative;
+
+        .photo {
+          position: absolute;
+          width: 50%;
+        }
+      }
+    }
+  }
+
+  #sunday-service {
+    flex-direction: row-reverse;
+
+    .background-box {
+      left: 10%;
+    }
+
+    .images {
+      .photos {
+        .photo {
+          &:first-child {
+            top: 30px;
+            left: 0;
+          }
+
+          &:last-child {
+            top: -120px;
+            right: 100px;
+            width: 40%;
+          }
+        }
+      }
+    }
+  }
+
+  #friday-service {
+    .images {
+      .background-box {
+        position: absolute;
+        right: 10%;
+      }
+
+      .photos {
+        .photo {
+          width: 40%;
+
+          &:first-child {
+            top: -120px;
+            left: 100px;
+          }
+
+          &:last-child {
+            top: -30px;
+            right: 0;
+          }
+        }
+      }
+    }
+  }
+
+  #christian-education-program {
+    flex-direction: row-reverse;
+
+    .images {
+      .background-box {
+        left: 10%;
+      }
+
+      .photos {
+        .photo {
+          width: 40%;
+
+          &:first-child {
+            top: -130px;
+            left: 0;
+          }
+
+          &:last-child {
+            right: 120px;
+          }
+        }
+      }
+    }
+  }
+}

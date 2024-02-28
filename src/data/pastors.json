@@ -3,17 +3,26 @@
     {
       "name": "Edwin Fernan",
       "role": "Bishop",
-      "img": "/"
+      "img": {
+        "src": "/bishop.jpg",
+        "alt": "Bishop Edwin Fernan"
+      }
     },
     {
       "name": "David Fernan",
       "role": "Senior Pastor",
-      "img": "/pastor-david.jpg"
+      "img": {
+        "src": "/pastor-david.jpg",
+        "alt": "Senior Pastor David Fernan"
+      }
     },
     {
       "name": "John Paul Tan",
       "role": "Assistant Pastor",
-      "img": "/pastor-paul.jpg"
+      "img": {
+        "src": "/pastor-paul.jpg",
+        "alt": "Assistant Pastor John Paul Tan"
+      }
     }
   ]
 }
