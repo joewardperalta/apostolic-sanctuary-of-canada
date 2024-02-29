@@ -1,11 +1,11 @@
 {
   "data": [
     {
-      "name": "Edwin Fernan",
-      "role": "Bishop",
+      "name": "Edwin Fernan & Ruth Fernan",
+      "role": "Bishop & First Lady",
       "img": {
         "src": "/bishop.jpg",
-        "alt": "Bishop Edwin Fernan"
+        "alt": "Bishop Edwin Fernan & First Lady Sis. Ruth Fernan"
       }
     },
     {
@@ -18,10 +18,10 @@
     },
     {
       "name": "John Paul Tan",
-      "role": "Assistant Pastor",
+      "role": "Pastor",
       "img": {
         "src": "/pastor-paul.jpg",
-        "alt": "Assistant Pastor John Paul Tan"
+        "alt": "Pastor John Paul Tan"
       }
     }
   ]

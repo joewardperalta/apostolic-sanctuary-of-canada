@@ -112,7 +112,7 @@ export default function About() {
           {/* our articles of faith */}
           <Row className="section-main" id="articles-of-faith ">
             <Col lg={6}>
-              <h2 className="heading">Our Aticles of Faith</h2>
+              <h2 className="heading">Our Articles of Faith</h2>
               <p>Tap or click the Link below to read our Articles of Faith.</p>
 
               {/* link to pdf version of articles of faith */}
