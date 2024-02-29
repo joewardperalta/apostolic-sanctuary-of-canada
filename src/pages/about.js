@@ -116,10 +116,7 @@ export default function About() {
               <p>Tap or click the Link below to read our Articles of Faith.</p>
 
               {/* link to pdf version of articles of faith */}
-              <Link
-                href="https://www.apostolicsanctuarycanada.com/_files/ugd/517e92_0fbd9d43cfd4470a9704fb9270d31c84.pdf"
-                target="_blank"
-              >
+              <Link href="TASC Articles of Faith 2023.pdf" target="_blank">
                 <Button variant="primary">Read our Articles of Faith</Button>
               </Link>
             </Col>
