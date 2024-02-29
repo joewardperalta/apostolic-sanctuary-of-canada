@@ -3,14 +3,13 @@ import { useState, useEffect } from "react";
 
 export default function Events() {
   const [events, setEvents] = useState();
+  const events_api = process.env.NEXT_PUBLIC_DOMAIN + "api/events";
 
   useEffect(() => {
-    fetch("https://apostolic-sanctuary-of-canada.vercel.app/api/events")
+    fetch(events_api)
       .then((res) => res.json())
       .then((data) => setEvents(data));
   }, []);
-
-  console.log(events);
 
   return (
     <section id="events-page">

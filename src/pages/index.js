@@ -5,13 +5,15 @@ import { useState, useEffect } from "react";
 export default function Home() {
   const [groups, setGroups] = useState();
   const [pastors, setPastors] = useState();
+  const groups_api = process.env.NEXT_PUBLIC_DOMAIN + "api/groups";
+  const pastors_api = process.env.NEXT_PUBLIC_DOMAIN + "api/pastors";
 
   useEffect(() => {
-    fetch("https://apostolic-sanctuary-of-canada.vercel.app/api/groups")
+    fetch(groups_api)
       .then((res) => res.json())
       .then((data) => setGroups(data));
 
-    fetch("https://apostolic-sanctuary-of-canada.vercel.app/api/pastors")
+    fetch(pastors_api)
       .then((res) => res.json())
       .then((data) => setPastors(data));
   }, []);
