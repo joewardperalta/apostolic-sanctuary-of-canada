@@ -63,7 +63,7 @@ export default function Home() {
                 <p>
                   We meet in our humble church every Sunday at 11am located in
                   1177 Finch Ave West building number 3. Please see the full
-                  details on our ministries and services{" "}
+                  details on our ministries and services.
                   <Link href="/ministries-and-services">here</Link>.
                 </p>
                 <p>
@@ -90,12 +90,13 @@ export default function Home() {
                   </Link>
                 </div>
               </div>
-              <Link href="/about">
-                <Button variant="secondary">
+
+              <Button variant="secondary">
+                <Link href="/about">
                   Learn more
-                  <i className="fa-solid fa-arrow-right"></i>
-                </Button>
-              </Link>
+                  <i className="icon fa-solid fa-arrow-right"></i>
+                </Link>
+              </Button>
             </Col>
             <Col className="photo me-lg-5" lg={6}>
               <img src="/church-family.jpg" alt="apostolic church family" />
