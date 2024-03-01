@@ -87,9 +87,9 @@ export default function MinistriesAndServices() {
             <h2 className="heading">Christian Education Program</h2>
             <p>
               Christian Education Program is seasonal and usually starts every
-              Sunday at 10:30am and ends at 11:00am. This March 2024 the program
-              will begin and so the time for prayer and devotion will be
-              adjusted at 10:00am.
+              Sunday at 10:00am and ends at 11:00am. This March 2024 the
+              Christian Education Program will begin and so the time for prayer
+              and devotion will be adjusted at 9:30am.
             </p>
             <p>
               If you want to learn more about the bible and theology please come

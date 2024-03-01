@@ -189,7 +189,7 @@ export default function Home() {
           </Row>
           <Row className="section-main">
             <Col lg={8}>
-              <img src="/SWR- Jan 30_001.webp" alt="upcoming events" />
+              <img src="/announcements.jpg" alt="upcoming events" />
             </Col>
           </Row>
           <Row className="section-footer">
