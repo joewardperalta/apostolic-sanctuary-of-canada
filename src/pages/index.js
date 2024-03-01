@@ -63,7 +63,7 @@ export default function Home() {
                 <p>
                   We meet in our humble church every Sunday at 11am located in
                   1177 Finch Ave West building number 3. Please see the full
-                  details on our ministries and services.
+                  details on our ministries and services{" "}
                   <Link href="/ministries-and-services">here</Link>.
                 </p>
                 <p>
