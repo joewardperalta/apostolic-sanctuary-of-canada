@@ -20,13 +20,6 @@ export default function Contact() {
             </div>
             <h5>Address</h5>
             <p>3-1177 Finch Ave W, North York, ON M3J 2E9</p>
-            <ul>
-              <li>Monday: 12-4pm</li>
-              <li>Wednesday: 7-10pm</li>
-              <li>Friday: 7:30-11:30pm</li>
-              <li>Saturday: 5-9pm</li>
-              <li>Sunday: 10am-3pm</li>
-            </ul>
           </Col>
           <Col lg={4}>
             <div className="icon-container">
