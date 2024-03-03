@@ -10,7 +10,6 @@
     background-size: cover;
     background-position: top center;
     height: calc(100vh - 89.594px);
-    padding: 200px 20px;
 
     .container {
       height: 100%;
@@ -173,6 +172,12 @@
   #upcoming-events-section {
     .section-main {
       justify-content: center;
+    }
+
+    .section-footer {
+      .btn {
+        margin-top: 3rem;
+      }
     }
   }
 
