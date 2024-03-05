@@ -2,14 +2,40 @@
   background-color: white;
   padding: 0.3rem 0;
 
-  #navbar-menu {
-    justify-content: end;
+  .navbar-toggler {
+    &,
+    &:focus {
+      text-decoration: none;
+      outline: 0;
+      border: none;
+      padding: 0;
+      box-shadow: none;
+    }
+  }
 
-    .navbar-nav {
-      gap: 1rem;
+  .navbar-nav {
+    .nav-link {
+      color: black;
+      padding-right: 1rem;
+      padding-bottom: 0;
+      font-size: 1rem;
 
-      .nav-link {
-        color: black;
+      &:last-child {
+        padding-right: 0;
+      }
+    }
+  }
+}
+
+// Small devices
+@media screen and (max-width: $medium) {
+  .offcanvas {
+    .offcanvas-body {
+      .navbar-nav {
+        .nav-link {
+          padding-bottom: 25px;
+          padding-top: 0;
+        }
       }
     }
   }
