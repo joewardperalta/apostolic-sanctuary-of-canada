@@ -12,8 +12,10 @@ export default function Footer() {
             </Col>
             <Col>
               <div className="icon phone-icon">
-                <i className="fa-solid fa-phone"></i>
-                (416) 421-0994
+                <Link href="tel:4164210994">
+                  <i className="fa-solid fa-phone"></i>
+                  (416) 421-0994
+                </Link>
               </div>
               <Link
                 className="icon envelope-open-text-icon"
