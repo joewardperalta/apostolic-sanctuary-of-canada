@@ -18,3 +18,9 @@ section {
 .active {
   color: $primary-color !important;
 }
+
+@media screen and (max-width: 576px) {
+  section {
+    padding: 50px 0;
+  }
+}

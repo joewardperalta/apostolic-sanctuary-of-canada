@@ -1,0 +1,221 @@
+@import "../abstracts/variables";
+
+.hero {
+  color: white;
+  background-image: linear-gradient(
+      to right,
+      $primary-color-dark,
+      rgba(0, 0, 0, 0)
+    ),
+    url("/pastor.png");
+  background-size: cover;
+  background-position: top center;
+  height: calc(100vh - 89.594px);
+
+  .container {
+    height: 100%;
+
+    .header {
+      height: inherit;
+      align-items: end;
+    }
+  }
+}
+
+.about {
+  .socialLink {
+    margin-right: 30px;
+    text-decoration: none;
+  }
+}
+
+.community {
+  .main {
+    .cardContainer {
+      a {
+        text-decoration: none;
+      }
+
+      .card {
+        height: 600px;
+        justify-content: end;
+        color: white;
+        padding: 1rem;
+        border: none;
+        background-size: cover;
+        background-position: center;
+
+        .cardBody {
+          flex-grow: 0;
+
+          .cardTitle {
+            font-size: 2rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+          }
+
+          .cardText {
+            margin-bottom: 2rem;
+          }
+        }
+      }
+
+      // Kids group card
+      &:nth-child(1) {
+        .card {
+          background-image: linear-gradient(
+              to top,
+              $primary-color-dark,
+              rgba(0, 0, 0, 0)
+            ),
+            url("/kids.jpg");
+        }
+      }
+
+      // Youth group card
+      &:nth-child(2) {
+        .card {
+          background-image: linear-gradient(
+              to top,
+              $primary-color-dark,
+              rgba(0, 0, 0, 0)
+            ),
+            url("/youth.jpg");
+        }
+      }
+
+      // Ladies group card
+      &:nth-child(3) {
+        .card {
+          background-image: linear-gradient(
+              to top,
+              $primary-color-dark,
+              rgba(0, 0, 0, 0)
+            ),
+            url("/ladies.jpg");
+        }
+      }
+
+      // Mens group card
+      &:nth-child(4) {
+        .card {
+          background-image: linear-gradient(
+              to top,
+              $primary-color-dark,
+              rgba(0, 0, 0, 0)
+            ),
+            url("/mens.jpg");
+        }
+      }
+    }
+  }
+}
+
+.services {
+  background-color: $primary-color-dark;
+  color: white;
+
+  .main {
+    .images {
+      display: grid;
+      gap: $gap;
+      width: 100%;
+
+      img {
+        &:first-child {
+          grid-column: 1 / span 2;
+          grid-row: 1 / span 2;
+        }
+      }
+    }
+  }
+}
+
+.upcomingEvents {
+  .header {
+    justify-content: center;
+  }
+
+  .main {
+    justify-content: center;
+  }
+}
+
+.churchPastors {
+  background-color: $color-grey;
+  color: white;
+
+  .header {
+    justify-content: center;
+  }
+
+  .main {
+    .cardContainer {
+      &:nth-child(2) {
+        margin-top: 50px;
+      }
+
+      .card {
+        background-color: transparent;
+        border: none;
+        color: white;
+        box-shadow: none;
+        margin: 30px;
+
+        .cardImage {
+          border-radius: $border-soft;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .community {
+    .header {
+      .subheading {
+        margin: 0;
+      }
+    }
+
+    .main {
+      .cardContainer {
+        &:last-child {
+          .card {
+            margin: 0;
+          }
+        }
+      }
+    }
+  }
+
+  .about {
+    .heading {
+      text-align: center;
+    }
+  }
+
+  .churchPastors {
+    .main {
+      .cardContainer {
+        margin: 10px 0;
+
+        .card {
+          margin: 0;
+        }
+
+        &:first-child {
+          margin-top: 0;
+        }
+
+        &:nth-child(2) {
+          margin-top: 0;
+        }
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+}

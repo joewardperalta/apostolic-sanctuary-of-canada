@@ -1,9 +1,10 @@
 import { Container, Row, Col } from "react-bootstrap";
 import Link from "next/link";
+import styles from "@/styles/pages/contact.module.scss";
 
 export default function Contact() {
   return (
-    <section id="contact-us-page">
+    <section id="contact-us">
       <Container className="text-center">
         <Row className="section-heading">
           <Col lg={7}>
@@ -13,23 +14,24 @@ export default function Contact() {
             </p>
           </Col>
         </Row>
-        <Row className="section-main">
+
+        <Row className={styles.main}>
           <Col lg={4}>
-            <div className="icon-container">
+            <div className={styles.iconContainer}>
               <i className="fa-solid fa-location-dot"></i>
             </div>
             <h5>Address</h5>
             <p>3-1177 Finch Ave W, North York, ON M3J 2E9</p>
           </Col>
           <Col lg={4}>
-            <div className="icon-container">
+            <div className={styles.iconContainer}>
               <i className="fa-solid fa-mobile-screen-button"></i>
             </div>
             <h5>Phone</h5>
             <p>(416) 421-0994</p>
           </Col>
           <Col lg={4}>
-            <div className="icon-container">
+            <div className={styles.iconContainer}>
               <i className="fa-solid fa-at"></i>
             </div>
             <h5>Email</h5>

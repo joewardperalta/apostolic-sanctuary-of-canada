@@ -9,7 +9,8 @@
 .btn-primary {
   background-color: $primary-color;
   border-radius: 0.2rem;
-  padding: 0.8rem 1.5rem;
+  padding: 0.8rem 2.5rem;
+  box-shadow: $shadow;
 
   a {
     color: $primary-color-extra-light;
@@ -33,5 +34,11 @@
 
   &:hover i {
     margin-left: 20px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .btn {
+    width: 100%;
   }
 }

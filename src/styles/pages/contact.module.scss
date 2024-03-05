@@ -1,0 +1,39 @@
+@import "../abstracts/variables";
+
+.main {
+  gap: $gap-xl;
+
+  [class*="col"] {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: $gap;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  h5 {
+    font-weight: 600;
+    text-transform: uppercase;
+  }
+
+  .iconContainer {
+    padding: 15px;
+    background-color: $primary-color;
+    border-radius: 100%;
+    width: 80px;
+    font-size: 2rem;
+    color: white;
+  }
+}
+
+// Large screen >= 992px
+@media screen and (min-width: $large) {
+  .main {
+    [class*="col"] {
+      width: calc(33% - $gap-lg);
+    }
+  }
+}

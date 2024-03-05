@@ -1,6 +1,7 @@
 import { Button, Col, Row, Container, Card } from "react-bootstrap";
 import Link from "next/link";
 import { useState, useEffect } from "react";
+import styles from "@/styles/pages/home.module.scss";
 
 export default function Home() {
   const [groups, setGroups] = useState();
@@ -19,11 +20,11 @@ export default function Home() {
   }, []);
 
   return (
-    <div id="home-page">
+    <>
       {/* Hero section */}
-      <section id="hero-section">
-        <Container>
-          <Row className="section-main">
+      <section className={styles.hero} id="hero">
+        <Container className={styles.container}>
+          <Row className={styles.header}>
             <Col md={12} lg={7}>
               <h1 className="title">
                 Jesus is the <span className="bold big-text">Way</span> the{" "}
@@ -35,10 +36,7 @@ export default function Home() {
                 and worship our one true God Jesus Christ.
               </p>
               <Link href="/location">
-                <Button variant="secondary">
-                  Visit our church
-                  <i className="icon fa-solid fa-arrow-right"></i>
-                </Button>
+                <Button variant="primary">Visit our church</Button>
               </Link>
             </Col>
           </Row>
@@ -46,12 +44,16 @@ export default function Home() {
       </section>
 
       {/* About section */}
-      <section className="border-bottom" id="about-section">
+      <section className={styles.about + " border-bottom"} id="about">
         <Container>
-          <Row className="section-main">
-            <Col className="info mb-5 mb-lg-0">
-              <h2 className="heading">Who We Are</h2>
-              <div className="description">
+          <Row className={styles.main}>
+            <Col className="mb-3 mb-sm-5 mb-lg-0 me-lg-5" lg={6}>
+              <img src="/church-family.jpg" alt="apostolic church family" />
+            </Col>
+
+            <Col>
+              <h2 className={styles.heading + " heading"}>Who We Are</h2>
+              <div className={styles.description}>
                 <p>
                   We are a Filipino Pentecostal Church and our mission is to
                   Carry out the Commission of our Lord Jesus Christ; to preach,
@@ -68,54 +70,47 @@ export default function Home() {
                 </p>
                 <p>
                   Follow us on our Facebook page to know more about us, be
-                  updated on upcoming events and watch our live services. We
-                  hope to see you soon.
+                  updated on upcoming events and live services. We hope to see
+                  you soon.
                 </p>
-                <div className="social-links">
+                <div className="mb-5">
                   <Link
-                    className="social-link icon facebook-icon"
+                    className={`${styles.socialLink} icon facebook-icon`}
                     href="https://www.facebook.com/apostolicsanctuarycanada"
                     target="_blank"
                   >
                     <i className="fa-brands fa-facebook"></i>
-                    Facebook page
+                    Facebook
                   </Link>
                   <Link
-                    className="social-link icon youtube-icon"
+                    className={`${styles.socialLink} icon youtube-icon`}
                     href="https://www.youtube.com/@theapostolicsanctuaryofcan4004"
                     target="_blank"
                   >
                     <i className="fa-brands fa-youtube"></i>
-                    Youtube channel
+                    Youtube
                   </Link>
                 </div>
               </div>
-
-              <Button variant="secondary">
-                <Link href="/about">
-                  Learn more
-                  <i className="icon fa-solid fa-arrow-right"></i>
-                </Link>
+              <Button variant="primary">
+                <Link href="/about">Learn more</Link>
               </Button>
-            </Col>
-            <Col className="photo me-lg-5" lg={6}>
-              <img src="/church-family.jpg" alt="apostolic church family" />
             </Col>
           </Row>
         </Container>
       </section>
 
       {/* Community section */}
-      <section id="community-section">
+      <section className={styles.community} id="community">
         <Container>
-          <Row className="section-heading">
-            <Col className="pe-5" lg={6}>
+          <Row className={styles.header + " mb-5"}>
+            <Col className="me-sm-5" lg={6}>
               <h2 className="heading">
                 Get connected with our church community
               </h2>
             </Col>
             <Col>
-              <p className="subheading">
+              <p className={styles.subheading + " subheading"}>
                 We believe that spiritual connections with God and with each
                 other are important for our spiritual growth. We are a community
                 dedicated to grow in spiritual truth refined on the teaching of
@@ -124,15 +119,19 @@ export default function Home() {
             </Col>
           </Row>
 
-          {/* create a list of church departments */}
-          <Row className="section-main">
+          {/* creates a list of church departments */}
+          <Row className={styles.main}>
             {groups?.data.map((group, index) => {
               return (
-                <Col key={index} className="card-container" lg={6}>
-                  <Card>
-                    <Card.Body>
-                      <Card.Title>{group.name}</Card.Title>
-                      <Card.Text>{group.description}</Card.Text>
+                <Col key={index} className={styles.cardContainer} lg={6}>
+                  <Card className={styles.card}>
+                    <Card.Body className={styles.cardBody}>
+                      <Card.Title className={styles.cardTitle}>
+                        {group.name}
+                      </Card.Title>
+                      <Card.Text className={styles.cardText}>
+                        {group.description}
+                      </Card.Text>
                     </Card.Body>
                   </Card>
                 </Col>
@@ -143,26 +142,23 @@ export default function Home() {
       </section>
 
       {/* Services section */}
-      <section id="services-section">
+      <section className={styles.services} id="services">
         <Container>
-          <Row>
-            <Col className="section-heading" lg={6}>
+          <Row className={styles.main}>
+            <Col className="me-0 me-sm-5 mb-5 mb-sm-0" lg={6}>
               <h2 className="heading">Join our Church Services</h2>
               <div className="subheading">
                 <p>
                   We meet every Sunday at The Apostolic Sanctuary of Canada. The
                   service starts at 11am and ends at 2pm.
                 </p>
-                <p>
-                  If you need further information about our services please
-                  click the button below.
-                </p>
-                <Link href="/ministries-and-services">
-                  <Button variant="primary">Ministries and Services</Button>
-                </Link>
               </div>
+              <Link href="/ministries-and-services">
+                <Button variant="primary">Ministries and Services</Button>
+              </Link>
             </Col>
-            <Col className="section-main">
+
+            <Col className={styles.images}>
               <img src="/praise-and-worship-1.jpg" alt="praise and worship" />
               <img src="/praise-and-worship-2.jpg" alt="praise and worship" />
               <img src="/praise-and-worship-3.jpg" alt="praise and worship" />
@@ -172,43 +168,42 @@ export default function Home() {
       </section>
 
       {/* Upcoming events section */}
-      <section className="border-bottom" id="upcoming-events-section">
+      <section
+        className={styles.upcomingEvents + " border-bottom"}
+        id="upcoming-events"
+      >
         <Container className="text-center">
-          <Row className="section-heading">
+          <Row className={styles.header + " mb-5"}>
             <Col lg={8}>
               <h2 className="heading">Upcoming Events and Services</h2>
-              <div className="subheading">
-                <p>
-                  Please check the announcements, reminders, and upcoming
-                  services and events so that you are aware of what's coming.
-                  You can also see all of our upcoming events by clicking the
-                  button below.
-                </p>
-              </div>
+              <p className="subheading mb-0">
+                Please check the announcements, reminders, and upcoming services
+                and events so that you are aware of what's coming.
+              </p>
             </Col>
           </Row>
-          <Row className="section-main">
+
+          <Row className={styles.main + " mb-5"}>
             <Col lg={8}>
               <img src="/announcements.jpg" alt="upcoming events" />
             </Col>
           </Row>
-          <Row className="section-footer">
-            <Col>
-              <Link href="/events">
-                <Button variant="primary">See all our upcoming events</Button>
-              </Link>
-            </Col>
+
+          <Row>
+            <Link href="/events" className="px-0">
+              <Button variant="primary">See all our upcoming events</Button>
+            </Link>
           </Row>
         </Container>
       </section>
 
       {/* Church pastors section */}
-      <section id="church-pastors">
+      <section className={styles.churchPastors} id="church-pastors">
         <Container>
-          <Row className="section-heading text-center">
+          <Row className={styles.header + " text-center mb-5"}>
             <Col lg={7}>
               <h2 className="heading">The Pastors of Our Church</h2>
-              <p className="subheading">
+              <p className="subheading mb-0">
                 We dedicate our full support and loyalty to our pastors because
                 without them we wouldn't be able to know about Jesus Christ.
               </p>
@@ -216,12 +211,13 @@ export default function Home() {
           </Row>
 
           {/* Create a list of cards for the pastors */}
-          <Row className="section-main text-center">
+          <Row className={styles.main + " text-center"}>
             {pastors?.data.map((pastor, index) => {
               return (
-                <Col key={index} className="card-container" lg={4}>
-                  <Card>
+                <Col key={index} className={styles.cardContainer} lg={4}>
+                  <Card className={styles.card}>
                     <Card.Img
+                      className={styles.cardImage}
                       variant="top"
                       src={pastor.img.src}
                       alt={pastor.img.alt}
@@ -237,6 +233,6 @@ export default function Home() {
           </Row>
         </Container>
       </section>
-    </div>
+    </>
   );
 }

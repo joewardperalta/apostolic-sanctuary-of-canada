@@ -16,6 +16,7 @@
 
 .subheading {
   font-size: 1.3rem;
+  margin-bottom: 1.8rem;
 }
 
 .bold {
@@ -24,4 +25,27 @@
 
 .big-text {
   font-size: 5rem;
+}
+
+@media screen and (max-width: 576px) {
+  .title {
+    font-size: 1.8rem;
+  }
+
+  .subtitle {
+    font-size: 1.1rem;
+  }
+
+  .big-text {
+    font-size: 3rem;
+  }
+
+  .heading {
+    font-size: 1.8rem;
+    margin-bottom: 1.2rem;
+  }
+
+  .subheading {
+    font-size: 1.1rem;
+  }
 }

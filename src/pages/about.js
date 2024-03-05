@@ -1,10 +1,11 @@
 import { Container, Row, Col, Button } from "react-bootstrap";
 import Link from "next/link";
+import styles from "@/styles/pages/about.module.scss";
 
 export default function About() {
   return (
     <>
-      <section id="about-page">
+      <section className={styles.about} id="about">
         <Container>
           {/* heading */}
           <Row className="section-heading text-center">
@@ -18,7 +19,7 @@ export default function About() {
           </Row>
 
           {/* our mission */}
-          <Row className="section-main" id="mission">
+          <Row className={styles.main + " " + styles.mission} id="mission">
             <Col>
               <h2 className="heading">Our Mission</h2>
               <p>
@@ -29,8 +30,8 @@ export default function About() {
                 Gospel to all nations and people.
               </p>
             </Col>
-            <Col className="photos" sm={0} lg={6}>
-              <div className="photo">
+            <Col className={styles.photos} sm={0} lg={6}>
+              <div className={styles.photo}>
                 <div className="frame">
                   <img
                     src="/IMG_0157.png"
@@ -39,7 +40,7 @@ export default function About() {
                 </div>
               </div>
 
-              <div className="photo">
+              <div className={styles.photo}>
                 <div className="frame">
                   <img
                     src="/IMG_3756.png"
@@ -51,7 +52,10 @@ export default function About() {
           </Row>
 
           {/* our commitment */}
-          <Row className="section-main" id="commitment">
+          <Row
+            className={styles.main + " " + styles.commitment}
+            id="commitment"
+          >
             <Col>
               <h2 className="heading">Our Commitment</h2>
               <p>
@@ -72,8 +76,8 @@ export default function About() {
                 minister with the love of God.
               </p>
             </Col>
-            <Col className="photos" sm={0} lg={6}>
-              <div className="photo">
+            <Col className={styles.photos} sm={0} lg={6}>
+              <div className={styles.photo}>
                 <div className="frame">
                   <img
                     src="/IMG_0161.png"
@@ -82,7 +86,7 @@ export default function About() {
                 </div>
               </div>
 
-              <div className="photo">
+              <div className={styles.photo}>
                 <div className="frame">
                   <img
                     src="/IMG_3760.png"
@@ -94,7 +98,7 @@ export default function About() {
           </Row>
 
           {/* our rights and privileges */}
-          <Row className="section-main" id="rights-and-privileges">
+          <Row className={styles.main} id="rights-and-privileges">
             <Col lg={6}>
               <h2 className="heading">Our Rights and Privileges</h2>
               <p>
@@ -110,7 +114,7 @@ export default function About() {
           </Row>
 
           {/* our articles of faith */}
-          <Row className="section-main" id="articles-of-faith ">
+          <Row className={styles.main} id="articles-of-faith ">
             <Col lg={6}>
               <h2 className="heading">Our Articles of Faith</h2>
               <p>Tap or click the Link below to read our Articles of Faith.</p>

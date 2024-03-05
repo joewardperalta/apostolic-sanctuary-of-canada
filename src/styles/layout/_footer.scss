@@ -61,7 +61,17 @@
   }
 }
 
-// Large screen >= 992px
+@media screen and (max-width: $small) {
+  #footer-section #footer-contacts .col:last-child {
+    flex-direction: column;
+    align-items: start;
+
+    .phone-icon {
+      margin-bottom: $gap-md;
+    }
+  }
+}
+
 @media screen and (min-width: $large) {
   #footer-section {
     #footer-navigations {
