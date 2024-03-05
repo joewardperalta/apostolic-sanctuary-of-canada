@@ -92,8 +92,11 @@ export default function Home() {
                   </Link>
                 </div>
               </div>
-              <Button variant="primary">
-                <Link href="/about">Learn more</Link>
+              <Button variant="secondary">
+                <Link href="/about">
+                  Learn more about us
+                  <i className="icon fa-solid fa-arrow-right"></i>
+                </Link>
               </Button>
             </Col>
           </Row>

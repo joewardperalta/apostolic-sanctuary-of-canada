@@ -33,7 +33,7 @@ export default function Footer() {
                 praise our one true God Jesus Christ.
               </h4>
               <Button variant="secondary">
-                <Link href="ministries-and-services">
+                <Link href="/ministries-and-services">
                   Get involve in the ministry
                   <i className="icon fa-solid fa-arrow-right"></i>
                 </Link>
