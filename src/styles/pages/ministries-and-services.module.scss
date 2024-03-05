@@ -1,12 +1,12 @@
-#ministries-and-services-page {
-  .section-main {
-    text-align: center;
+@import "../abstracts/variables";
 
+.services {
+  .main {
     .images {
       display: none;
       position: relative;
 
-      .background-box {
+      .backgroundBox {
         position: absolute;
         top: -50px;
         height: 250px;
@@ -26,10 +26,10 @@
     }
   }
 
-  #sunday-service {
+  .sunday {
     flex-direction: row-reverse;
 
-    .background-box {
+    .backgroundBox {
       left: 10%;
     }
 
@@ -51,13 +51,12 @@
     }
   }
 
-  #friday-service {
-    .images {
-      .background-box {
-        position: absolute;
-        right: 10%;
-      }
+  .friday {
+    .backgroundBox {
+      right: 10%;
+    }
 
+    .images {
       .photos {
         .photo {
           width: 40%;
@@ -76,11 +75,11 @@
     }
   }
 
-  #christian-education-program {
+  .christianEducationProgram {
     flex-direction: row-reverse;
 
     .images {
-      .background-box {
+      .backgroundBox {
         left: 10%;
       }
 
@@ -102,10 +101,28 @@
   }
 }
 
-// Large screen >= 992px
+// Extra small devices
+@media screen and (max-width: $small) {
+  .services {
+    .main {
+      text-align: center;
+    }
+  }
+}
+
+// Small devices
+@media screen and (min-width: $small) {
+  .services {
+    .main {
+      text-align: center;
+    }
+  }
+}
+
+// Large devices
 @media screen and (min-width: $large) {
-  #ministries-and-services-page {
-    .section-main {
+  .services {
+    .main {
       text-align: start;
       padding: 120px 0;
 

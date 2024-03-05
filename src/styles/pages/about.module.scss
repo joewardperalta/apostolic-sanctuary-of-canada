@@ -11,6 +11,11 @@
       display: none;
       position: absolute;
       width: 40%;
+
+      .frame {
+        padding: 10px;
+        box-shadow: $shadow;
+      }
     }
   }
 }

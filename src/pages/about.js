@@ -7,8 +7,8 @@ export default function About() {
     <>
       <section className={styles.about} id="about">
         <Container>
-          {/* heading */}
-          <Row className="section-heading text-center">
+          {/* about page header */}
+          <Row className="header text-center justify-content-center">
             <Col lg={7}>
               <h1 className="title">About Us</h1>
               <p className="subtitle">
@@ -31,7 +31,7 @@ export default function About() {
               </p>
             </Col>
             <Col className={styles.photos} sm={0} lg={6}>
-              <div className={styles.photo}>
+              <div className={"photo " + styles.photo}>
                 <div className="frame">
                   <img
                     src="/IMG_0157.png"
@@ -40,7 +40,7 @@ export default function About() {
                 </div>
               </div>
 
-              <div className={styles.photo}>
+              <div className={"photo " + styles.photo}>
                 <div className="frame">
                   <img
                     src="/IMG_3756.png"
@@ -77,7 +77,7 @@ export default function About() {
               </p>
             </Col>
             <Col className={styles.photos} sm={0} lg={6}>
-              <div className={styles.photo}>
+              <div className={"photo " + styles.photo}>
                 <div className="frame">
                   <img
                     src="/IMG_0161.png"
@@ -86,7 +86,7 @@ export default function About() {
                 </div>
               </div>
 
-              <div className={styles.photo}>
+              <div className={"photo " + styles.photo}>
                 <div className="frame">
                   <img
                     src="/IMG_3760.png"

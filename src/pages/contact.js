@@ -6,7 +6,8 @@ export default function Contact() {
   return (
     <section id="contact-us">
       <Container className="text-center">
-        <Row className="section-heading">
+        {/* Contact section header */}
+        <Row className="header text-center justify-content-center">
           <Col lg={7}>
             <h1 className="title">Contact Us</h1>
             <p className="subtitle">
@@ -15,6 +16,7 @@ export default function Contact() {
           </Col>
         </Row>
 
+        {/* Contact info */}
         <Row className={styles.main}>
           <Col lg={4}>
             <div className={styles.iconContainer}>

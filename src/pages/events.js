@@ -1,5 +1,6 @@
 import { Container, Row, Col, Card, CardBody } from "react-bootstrap";
 import { useState, useEffect } from "react";
+import "@/styles/pages/events.module.scss";
 
 export default function Events() {
   const [events, setEvents] = useState();
@@ -12,9 +13,10 @@ export default function Events() {
   }, []);
 
   return (
-    <section id="events-page">
+    <section id="events">
       <Container>
-        <Row className="section-heading text-center">
+        {/* Events section header */}
+        <Row className="header text-center justify-content-center">
           <Col lg={7}>
             <h1 className="title">Upcoming Events</h1>
             <p className="subtitle">
@@ -25,10 +27,10 @@ export default function Events() {
         </Row>
 
         {/* creates cards for each of the events */}
-        <Row className="section-main">
+        <Row className="main">
           {events?.data.map((event, index) => {
             return (
-              <Col key={index} className="card-container" lg={4}>
+              <Col key={index} lg={4}>
                 <Card>
                   <Card.Img
                     variant="top"

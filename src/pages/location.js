@@ -4,7 +4,7 @@ export default function Location() {
   return (
     <section id="location-page">
       <Container>
-        <Row className="section-heading text-center">
+        <Row className="header text-center justify-content-center">
           <Col lg={7}>
             <h1 className="title">Church Location</h1>
             <p className="subtitle">

@@ -18,6 +18,7 @@
     .header {
       height: inherit;
       align-items: end;
+      margin-bottom: 0;
     }
   }
 }
@@ -27,21 +28,19 @@
     margin-right: 30px;
     text-decoration: none;
   }
+
+  .header {
+    margin-bottom: 0;
+  }
 }
 
 .community {
   .main {
     .cardContainer {
-      a {
-        text-decoration: none;
-      }
-
       .card {
         height: 600px;
         justify-content: end;
         color: white;
-        padding: 1rem;
-        border: none;
         background-size: cover;
         background-position: center;
 
@@ -115,46 +114,26 @@
   background-color: $primary-color-dark;
   color: white;
 
-  .main {
-    .images {
-      display: grid;
-      gap: $gap;
-      width: 100%;
+  .images {
+    display: grid;
+    gap: $gap;
+    width: 100%;
 
-      img {
-        &:first-child {
-          grid-column: 1 / span 2;
-          grid-row: 1 / span 2;
-        }
+    img {
+      &:first-child {
+        grid-column: 1 / span 2;
+        grid-row: 1 / span 2;
       }
     }
   }
 }
 
-.upcomingEvents {
-  .header {
-    justify-content: center;
-  }
-
-  .main {
-    justify-content: center;
-  }
-}
-
-.churchPastors {
+.pastors {
   background-color: $color-grey;
   color: white;
 
-  .header {
-    justify-content: center;
-  }
-
-  .main {
+  .cards {
     .cardContainer {
-      &:nth-child(2) {
-        margin-top: 50px;
-      }
-
       .card {
         background-color: transparent;
         border: none;
@@ -170,7 +149,14 @@
   }
 }
 
-@media screen and (max-width: 576px) {
+// Extra small devices
+@media screen and (max-width: $small) {
+  .about {
+    .heading {
+      text-align: center;
+    }
+  }
+
   .community {
     .header {
       .subheading {
@@ -189,31 +175,44 @@
     }
   }
 
-  .about {
-    .heading {
-      text-align: center;
-    }
+  .services {
+    text-align: center;
   }
 
-  .churchPastors {
-    .main {
+  .pastors {
+    .cards {
       .cardContainer {
         margin: 10px 0;
 
         .card {
           margin: 0;
         }
+      }
+    }
+  }
+}
 
-        &:first-child {
+// Large devices
+@media screen and (min-width: $large) {
+  .pastors {
+    .cards {
+      .cardContainer {
+        .card {
           margin-top: 0;
         }
 
-        &:nth-child(2) {
-          margin-top: 0;
+        &:first-child {
+          .card {
+            margin-left: 0;
+            margin-bottom: 0;
+          }
         }
 
         &:last-child {
-          margin-bottom: 0;
+          .card {
+            margin-right: 0;
+            margin-bottom: 0;
+          }
         }
       }
     }
