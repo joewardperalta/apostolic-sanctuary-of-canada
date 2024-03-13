@@ -9,10 +9,6 @@ export default function Layout({ children, poppins }) {
       <Head>
         <title>Apostolic Sanctuary of Canada</title>
         <link rel="icon" href="/church_logo.ico" sizes="any" />
-        <meta
-          name="google-site-verification"
-          content="JCL1dhKLXxs3zKzwTxV2BgRo2tTT2MTWUJRtkTZJDmE"
-        />
       </Head>
       <header className={poppins.className}>
         <MainNav />
