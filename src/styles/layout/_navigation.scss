@@ -1,6 +1,6 @@
 .navbar {
   background-color: white;
-  padding: 0.3rem 0;
+  padding: 0.8rem 0;
 
   .navbar-toggler {
     &,
@@ -16,12 +16,36 @@
   .navbar-nav {
     .nav-link {
       color: black;
-      padding-right: 1rem;
-      padding-bottom: 0;
+      padding: 0 1.5rem;
       font-size: 1rem;
+      transition: all 0.5s;
 
-      &:last-child {
+      &:hover {
+        color: $primary-color;
+      }
+    }
+
+    #contact-us-button {
+      #contact-us-link {
+        padding: 0;
+
+        i {
+          padding-right: 12px;
+          padding-left: 0;
+        }
+
         padding-right: 0;
+        color: black;
+      }
+
+      &:hover {
+        #contact-us-link {
+          color: $primary-color;
+
+          i {
+            margin-left: 0;
+          }
+        }
       }
     }
   }

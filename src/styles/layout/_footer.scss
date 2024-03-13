@@ -17,6 +17,22 @@
       text-decoration: none;
     }
 
+    .btn-secondary {
+      i {
+        padding-right: 12px;
+      }
+
+      &:hover {
+        i {
+          margin-left: 0;
+        }
+      }
+
+      &:last-child {
+        margin-left: 21px;
+      }
+    }
+
     .col {
       &:last-child {
         display: flex;
@@ -62,12 +78,18 @@
 }
 
 @media screen and (max-width: $small) {
-  #footer-section #footer-contacts .col:last-child {
-    flex-direction: column;
-    align-items: start;
+  #footer-section {
+    #footer-contacts {
+      .col:last-child {
+        flex-direction: column;
+        align-items: start;
+      }
 
-    .phone-icon {
-      margin-bottom: $gap-md;
+      .btn-secondary {
+        &:last-child {
+          margin-left: 0;
+        }
+      }
     }
   }
 }

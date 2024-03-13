@@ -1,6 +1,11 @@
 .btn {
   font-weight: 500;
 
+  &:first-child:active {
+    background-color: transparent;
+    border-color: transparent;
+  }
+
   a {
     text-decoration: none;
   }
@@ -9,11 +14,18 @@
 .btn-primary {
   background-color: $primary-color;
   border-radius: 0.2rem;
-  padding: 0.8rem 2.5rem;
+  padding: 0.8rem 2rem;
   box-shadow: $shadow;
+  border: none;
+  transition: all 0.5s;
 
   a {
     color: $primary-color-extra-light;
+  }
+
+  &:hover {
+    color: black;
+    background-color: $primary-color-light;
   }
 }
 
@@ -21,15 +33,16 @@
   background-color: transparent;
   border: none;
   padding: 0;
+  color: black;
 
-  .icon {
-    font-size: 1rem;
-    margin-left: 0.7rem;
-    transition: margin-left 0.5s;
+  i {
+    transition: all 0.5s;
+    padding-left: 16px;
   }
 
   &:hover {
     background-color: transparent;
+    color: black;
   }
 
   &:hover i {

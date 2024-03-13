@@ -11,19 +11,18 @@ export default function Footer() {
               <img className="logo" src="/church-logo.png" alt="church logo" />
             </Col>
             <Col>
-              <div className="icon phone-icon">
+              <Button variant="secondary">
                 <Link href="tel:4164210994">
                   <i className="fa-solid fa-phone"></i>
                   (416) 421-0994
                 </Link>
-              </div>
-              <Link
-                className="icon envelope-open-text-icon"
-                href="mailto:myapostolicsanctuary@gmail.com"
-              >
-                <i className="icon envelope-op-icon fa-solid fa-envelope-open-text"></i>
-                myapostolicsanctuary@gmail.com
-              </Link>
+              </Button>
+              <Button variant="secondary">
+                <Link href="mailto:myapostolicsanctuary@gmail.com">
+                  <i className="fa-solid fa-envelope-open-text"></i>
+                  myapostolicsanctuary@gmail.com
+                </Link>
+              </Button>
             </Col>
           </Row>
 
@@ -37,7 +36,7 @@ export default function Footer() {
               <Button variant="secondary">
                 <Link href="/ministries-and-services">
                   Get involve in the ministry
-                  <i className="icon fa-solid fa-arrow-right"></i>
+                  <i className="fa-solid fa-arrow-right"></i>
                 </Link>
               </Button>
             </Col>
@@ -83,22 +82,25 @@ export default function Footer() {
               <p>&copy; 2024 by The Apostolic Sanctuary of Canada.</p>
             </Col>
             <Col className="text-end">
-              <div className="social-links">
-                <Link
-                  className="icon facebook-icon"
-                  href="https://www.facebook.com/apostolicsanctuarycanada"
-                  target="_blank"
-                >
-                  <i className="fa-brands fa-facebook"></i>
-                </Link>
-                <Link
-                  className="icon youtube-icon"
-                  href="https://www.youtube.com/@theapostolicsanctuaryofcan4004"
-                  target="_blank"
-                >
-                  <i className="fa-brands fa-youtube"></i>
-                </Link>
-              </div>
+              <Link
+                className="me-2"
+                href="https://www.facebook.com/apostolicsanctuarycanada"
+                target="_blank"
+              >
+                <i
+                  className="fa-brands fa-facebook fa-lg"
+                  style={{ color: "#005eff" }}
+                ></i>
+              </Link>
+              <Link
+                href="https://www.youtube.com/@theapostolicsanctuaryofcan4004"
+                target="_blank"
+              >
+                <i
+                  className="fa-brands fa-youtube fa-lg"
+                  style={{ color: "#ff0000" }}
+                ></i>
+              </Link>
             </Col>
           </Row>
         </Container>

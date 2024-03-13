@@ -29,8 +29,7 @@
   }
 }
 
-// Large screen >= 992px
-@media screen and (min-width: $large) {
+@media (min-width: $large) {
   .main {
     [class*="col"] {
       width: calc(33% - $gap-lg);

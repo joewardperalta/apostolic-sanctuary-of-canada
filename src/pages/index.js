@@ -54,14 +54,14 @@ export default function Home() {
             </Col>
 
             {/* About description */}
-            <Col className="description">
+            <Col>
               <Row className={"header " + styles.header}>
                 <Col>
                   <h2 className="heading">Who We Are</h2>
                 </Col>
               </Row>
 
-              <Row className="paragraph">
+              <Row className="mb-4">
                 <Col>
                   <p>
                     We are a Filipino Pentecostal Church and our mission is to
@@ -74,43 +74,49 @@ export default function Home() {
                   <p>
                     We meet in our humble church every Sunday at 11am located in
                     1177 Finch Ave West building number 3. Please see the full
-                    details on our ministries and services{" "}
-                    <Link href="/ministries-and-services">here</Link>.
+                    details on our ministries and services.
                   </p>
                   <p>
                     Follow us on our Facebook page to know more about us, be
                     updated on upcoming events and live services. We hope to see
                     you soon.
                   </p>
+                </Col>
+              </Row>
+              <Row>
+                <Col>
+                  <Button variant="secondary">
+                    <Link href="/about">
+                      Learn more about us
+                      <i className="fa-solid fa-arrow-right"></i>
+                    </Link>
+                  </Button>
+                </Col>
 
-                  {/* Social links */}
-                  <div className="mb-4">
+                <Col className="d-flex justify-content-end">
+                  <span>
                     <Link
-                      className={`${styles.socialLink} icon facebook-icon`}
+                      className="me-2"
                       href="https://www.facebook.com/apostolicsanctuarycanada"
                       target="_blank"
                     >
-                      <i className="fa-brands fa-facebook"></i>
-                      Facebook
+                      <i
+                        className="fa-brands fa-facebook fa-lg"
+                        style={{ color: "#005eff" }}
+                      ></i>
                     </Link>
                     <Link
-                      className={`${styles.socialLink} icon youtube-icon`}
                       href="https://www.youtube.com/@theapostolicsanctuaryofcan4004"
                       target="_blank"
                     >
-                      <i className="fa-brands fa-youtube"></i>
-                      Youtube
+                      <i
+                        className="fa-brands fa-youtube fa-lg"
+                        style={{ color: "#ff0000" }}
+                      ></i>
                     </Link>
-                  </div>
+                  </span>
                 </Col>
               </Row>
-
-              <Button variant="secondary">
-                <Link href="/about">
-                  Learn more about us
-                  <i className="icon fa-solid fa-arrow-right"></i>
-                </Link>
-              </Button>
             </Col>
           </Row>
         </Container>
